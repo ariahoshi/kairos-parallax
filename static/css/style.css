@@ -9,6 +9,11 @@ body {
     border: 0;
 }
 
+/* headings */
+h1 {
+    font-size: 60px;
+}
+
 /* Home Section */
 #section_home {
     height: 100%;
@@ -93,4 +98,8 @@ body {
 }
 #section_1999 div.center div.container {
     max-width: 1800px;
+}
+#section_1999 div.center div.container p{
+    text-align: left;
+    text-transform: uppercase;
 }

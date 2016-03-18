@@ -17,64 +17,20 @@ h1 {
     font-size: 60px;
 }
 
-/* Home Section */
-#section_home {
-    height: 100%;
-    background: url('../img/bg_home.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/* spacer */
+.spacer-5 {
+    height: 5px;
+}
+.spacer-10 {
+    height: 10px;
+}
+.spacer-20 {
+    height: 20px;
+}
+.spacer-40 {
+    height: 40px;
 }
 
-#section_home div.center div.container img {
-    display: block;
-    margin-bottom: 50px;
-}
-#section_home div.center div.container a {
-    font-size: 60px;
-    color: rgba(255,255,255,0.5);
-}
-#section_home div.center div.container a:hover {
-    color: rgba(255,255,255,1);
-}
-
-/* 1999 Section */
-.bg_blue {
-    height: 100%;
-    background: url('../img/bg_blue.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#section_1999 .title {
-    top: 20%;
-    left: 50%;
-    margin-left: -80px;
-    position: absolute;
-    color: #fff;
-}
-#section_1999 div.center div.container {
-    max-width: 1800px;
-}
-#section_1999 p.timeline_p {
-    padding-top: 18px;
-    text-align: left;
-}
-
-/* 2013 Section */
-#section_2013 {
-    height: 100%;
-    background: url('../img/bg_home.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#section_2013 p.timeline_p {
-    text-align: right;
-}
 
 #section_circle div.round_number {
     width: 100px;
@@ -176,4 +132,83 @@ div.center {
 .pure-g {
     max-width: 1800px;
     width: 100%;
+}
+
+
+/* Home Section */
+#section_home {
+    height: 100%;
+    background: url('../img/bg_home.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section_home div.center div.container img {
+    display: block;
+    margin-bottom: 50px;
+}
+#section_home div.center div.container a {
+    font-size: 60px;
+    color: rgba(255,255,255,0.5);
+}
+#section_home div.center div.container a:hover {
+    color: rgba(255,255,255,1);
+}
+
+/* 1999 Section */
+.bg_blue {
+    height: 100%;
+    background: url('../img/bg_blue.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#section_1999 .title {
+    top: 20%;
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
+    color: #fff;
+}
+#section_1999 div.center div.container {
+    max-width: 1800px;
+}
+#section_1999 p.timeline_p {
+    padding-top: 18px;
+    text-align: left;
+}
+
+/* 2013 Section */
+#section_2013 {
+    height: 100%;
+    background: url('../img/bg_home.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#section_2013 p.timeline_p {
+    text-align: right;
+}
+
+/* 2016 Section */
+#section_2016 .vertical-line.vertical-line-half-top {
+    bottom: 60%;
+}
+#section_2016 .line-bubble {
+    top: 40%;
+}
+
+/* Circle Section */
+#section_circle div.round_number {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    font-size: 50px;
+    text-align: center;
 }

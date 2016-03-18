@@ -32,33 +32,7 @@ h1 {
 }
 
 
-#section_circle div.round_number {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    font-size: 50px;
-    text-align: center;
-}
-div.rounded {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    text-align: center;
-    background: #FFF;
-}
-div.rounded div.number {
-  color: blue;
-  text-align: center; /* Centro orizzontalmente */
-  line-height: 100px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
-  font-size: 50px;
-  font-weight: bold;
-}
-
-
+/* classi usate like there's no tomorrow */
 div.center {
     text-align: center;
     color: #fff;
@@ -212,3 +186,20 @@ div.center {
     font-size: 50px;
     text-align: center;
 }
+div.rounded {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: #FFF;
+}
+div.rounded div.number {
+  color: blue;
+  text-align: center; /* Centro orizzontalmente */
+  line-height: 100px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+  font-size: 50px;
+  font-weight: bold;
+}
+

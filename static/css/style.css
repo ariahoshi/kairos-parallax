@@ -1,93 +1,93 @@
 html, body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
 }
 body {
-    font-family: 'myriad-pro', sans-serif;
-    font-weight: 400;
-    border: 0;
+  font-family: 'myriad-pro', sans-serif;
+  font-weight: 400;
+  border: 0;
 }
 body > section {
-    position: relative;
+  position: relative;
 }
 
 /* headings */
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 p {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* spacer */
 .spacer-5 {
-    height: 5px;
+  height: 5px;
 }
 .spacer-10 {
-    height: 10px;
+  height: 10px;
 }
 .spacer-20 {
-    height: 20px;
+  height: 20px;
 }
 .spacer-40 {
-    height: 40px;
+  height: 40px;
 }
 
 
 /* classi usate like there's no tomorrow */
 div.center {
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* vertical align */
-    /* Internet Explorer 10 */
-    display:-ms-flexbox;
-    -ms-flex-pack:center;
-    -ms-flex-align:center;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* vertical align */
+  /* Internet Explorer 10 */
+  display:-ms-flexbox;
+  -ms-flex-pack:center;
+  -ms-flex-align:center;
 
-    /* Firefox */
-    display:-moz-box;
-    -moz-box-pack:center;
-    -moz-box-align:center;
+  /* Firefox */
+  display:-moz-box;
+  -moz-box-pack:center;
+  -moz-box-align:center;
 
-    /* Safari, Opera, and Chrome */
-    display:-webkit-box;
-    -webkit-box-pack:center;
-    -webkit-box-align:center;
+  /* Safari, Opera, and Chrome */
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
 
-    /* W3C */
-    display:box;
-    box-pack:center;
-    box-align:center;
+  /* W3C */
+  display:box;
+  box-pack:center;
+  box-align:center;
 }
 
 .l-box{
-   margin: 40px;
+  margin: 40px;
 }
 
 .line-bubble {
-    width: 12px;
-    height: 12px;
-    border: 3px solid #fff;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    top: 50%;
-    left: 50%;
-    margin-top: -9px;
-    margin-left: -9px;
-    position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -9px;
+  position: absolute;
 }
 .vertical-line {
-    width: 3px;
-    background-color: #FFF;
-    left: 50%;
-    margin-left: -2px;
-    position: absolute;
+  width: 3px;
+  background-color: #FFF;
+  left: 50%;
+  margin-left: -2px;
+  position: absolute;
 }
 .vertical-line.vertical-line-full {
   top: 0;
@@ -104,106 +104,106 @@ div.center {
   margin-top: 20px;
 }
 .pure-g {
-    max-width: 1800px;
-    width: 100%;
+  max-width: 1800px;
+  width: 100%;
 }
 
 
 /* Home Section */
 #section_home {
-    height: 100%;
-    background: url('../img/bg_milan.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 100%;
+  background: url('../img/bg_milan.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #section_home div.center div.container img {
-    display: block;
-    margin-bottom: 50px;
+  display: block;
+  margin-bottom: 50px;
 }
 #section_home .btn {
-    font-size: 60px;
-    text-align: center;
-    width: 100px;
-    margin-left: -50px;
-    color: rgba(255,255,255,0.5);
-    top: 80%;
-    left: 50%;
-    position: absolute;
+  font-size: 60px;
+  text-align: center;
+  width: 100px;
+  margin-left: -50px;
+  color: rgba(255,255,255,0.5);
+  top: 80%;
+  left: 50%;
+  position: absolute;
 }
 #section_home .btn a:hover {
-    color: rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
 }
 
 /* 1999 Section */
 .bg_blue {
-    min-height: 600px;
-    background: url('../img/bg_blue.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  min-height: 600px;
+  background: url('../img/bg_blue.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #section_1999 .title {
-    top: 20%;
-    left: 50%;
-    margin-left: -80px;
-    position: absolute;
-    color: #fff;
+  top: 20%;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  color: #fff;
 }
 #section_1999 div.center div.container {
-    max-width: 1800px;
+  max-width: 1800px;
 }
 #section_1999 p.timeline_p {
-    padding-top: 18px;
-    text-align: left;
+  padding-top: 18px;
+  text-align: left;
 }
 
 /* 2013 Section */
 #section_2013 {
-    height: 100%;
-    background: url('../img/bg_swiss.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 100%;
+  background: url('../img/bg_swiss.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #section_2013 p.timeline_p {
-    text-align: right;
+  text-align: right;
 }
 
 /* 2016 Section */
 #section_2016 .vertical-line.vertical-line-half-top {
-    bottom: 60%;
+  bottom: 60%;
 }
 #section_2016 .line-bubble {
-    top: 40%;
+  top: 40%;
 }
 #section_2016 .container {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 /* Circle Section */
 #section_circle {
-    height: 100%;
-    background: url('../img/bg_london.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-size: 15px;
+  height: 100%;
+  background: url('../img/bg_london.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 15px;
 }
 div.rounded {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    text-align: center;
-    background: #FFF;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #FFF;
 }
 div.rounded div.number {
   color: #5a96dd;
@@ -213,25 +213,25 @@ div.rounded div.number {
   font-weight: bold;
 }
 #section_circle .p_left {
-    text-align: left;
-    padding: 0 10px;
+  text-align: left;
+  padding: 0 10px;
 }
 
 /* group Section */
 #section_group {
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-size: 15px;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 15px;
 }
 #section_group div dl dt {
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: left;
-    padding: 7px 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  padding: 7px 20px;
 }
 #section_group .container {
   max-width: 1000px;
@@ -240,36 +240,36 @@ div.rounded div.number {
 
 /* Navigation */
 #slideNav {
-    display: none;
-    position: fixed;
-    right: 0;
-    top: 50%;
-    margin-top: -80px;
-    z-index: 11;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -80px;
+  z-index: 11;
 }
 #slideNav ul {
-    list-style: none;
-    color: #000000;
-    font-size: 13px;
-    text-align: center;
+  list-style: none;
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
 }
 #slideNav li {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background-color: rgba(255,255,255,0.70);
-    margin-bottom: 1px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255,255,255,0.70);
+  margin-bottom: 1px;
 }
 .no-rgba  #slideNav li {background-color: #ffffff}
 #slideNav a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    color: #000000;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000000;
 }
 #slideNav a.disabled {
-    cursor: default;
+  cursor: default;
 }

@@ -239,28 +239,26 @@ div.rounded div.number {
 
 
 /* Navigation */
-#slideNav {
-  display: none;
+#slideNav { 
   position: fixed;
   right: 0;
   top: 50%;
   margin-top: -80px;
-  z-index: 11;
+  z-index: 2;
 }
 #slideNav ul {
   list-style: none;
-  color: #000000;
-  font-size: 13px;
+  color: #5a5a5a;
+  font-size: 16px;
   text-align: center;
 }
 #slideNav li {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background-color: rgba(255,255,255,0.70);
+  background-color: rgba(255,255,255,0.65);
   margin-bottom: 1px;
-}
-.no-rgba  #slideNav li {background-color: #ffffff}
+} 
 #slideNav a {
   display: block;
   width: 50px;
@@ -268,8 +266,5 @@ div.rounded div.number {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  color: #000000;
-}
-#slideNav a.disabled {
-  cursor: default;
+  color: #5a5a5a;
 }

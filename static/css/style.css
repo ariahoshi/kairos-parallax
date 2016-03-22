@@ -233,6 +233,9 @@ div.rounded div.number {
     text-align: left;
     padding: 7px 20px;
 }
+#section_group .container {
+  max-width: 1000px;
+}
 
 
 /* Navigation */

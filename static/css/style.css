@@ -66,6 +66,14 @@ div.center {
   display:box;
   box-pack:center;
   box-align:center;
+  
+  opacity: 0;
+  transition: opacity .40s ease-in-out;
+  -moz-transition: opacity .40s ease-in-out;
+  -webkit-transition: opacity .40s ease-in-out;
+}
+div.center.fade {
+  opacity: 1;
 }
 
 .l-box{

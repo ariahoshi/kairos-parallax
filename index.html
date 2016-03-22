@@ -252,16 +252,24 @@
           smoothScroll.animateScroll('#' + sections[currentSection].getAttribute('id'));
         });
         
-        window.addEventListener('scroll', function () {
+        
+        var scrollHandler = function () {
           // var pY = document.documentElement.scrollTop || document.body.scrollTop;
           // console.log('pY', pY);
           
           sections.forEach(function (el, i) {
-            if (el.getBoundingClientRect().top < 10) {
+            var sTop = el.getBoundingClientRect().top;
+            if (sTop >= -100 && sTop <= 100) {
+              // This is the current section
               currentSection = i;
+              
+              el.querySelector('.center').classList.add('fade');
             }
           });
-        });
+        };
+        
+        window.addEventListener('scroll', scrollHandler);
+        scrollHandler();
         
       })();
     </script>

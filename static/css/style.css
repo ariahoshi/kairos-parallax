@@ -13,6 +13,22 @@ body {
 }
 body > section {
   position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
 }
 
 /* headings */
@@ -22,6 +38,25 @@ h1 {
 
 p {
   text-transform: uppercase;
+  line-height: 150%;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  border: 2px solid #FFF;
 }
 
 /* spacer */
@@ -45,39 +80,21 @@ div.center {
   color: #fff;
   position: absolute;
   width: 100%;
-  height: 100%;
-  /* vertical align */
-  /* Internet Explorer 10 */
-  display:-ms-flexbox;
-  -ms-flex-pack:center;
-  -ms-flex-align:center;
-
-  /* Firefox */
-  display:-moz-box;
-  -moz-box-pack:center;
-  -moz-box-align:center;
-
-  /* Safari, Opera, and Chrome */
-  display:-webkit-box;
-  -webkit-box-pack:center;
-  -webkit-box-align:center;
-
-  /* W3C */
-  display:box;
-  box-pack:center;
-  box-align:center;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
   
   opacity: 0;
-  transition: opacity .40s ease-in-out;
-  -moz-transition: opacity .40s ease-in-out;
-  -webkit-transition: opacity .40s ease-in-out;
+  transition: opacity .80s ease-in-out;
+  -moz-transition: opacity .80s ease-in-out;
+  -webkit-transition: opacity .80s ease-in-out;
 }
 div.center.fade {
   opacity: 1;
 }
 
 .l-box{
-  margin: 40px;
+  padding: 40px;
 }
 
 .line-bubble {
@@ -114,6 +131,7 @@ div.center.fade {
   bottom: 0;
   margin-top: 20px;
 }
+
 .pure-g {
   max-width: 1800px;
   width: 100%;
@@ -132,7 +150,7 @@ div.center.fade {
 
 #section_home div.center div.container img {
   display: block;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 #section_home .btn {
   font-size: 60px;
@@ -157,7 +175,7 @@ div.center.fade {
 /* 1999 Section */
 .bg_blue {
   height:100%;
-  background: url('../img/bg_blue.png') no-repeat center center fixed;
+  background: url('../img/bg_blue.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -190,6 +208,9 @@ div.center.fade {
 #section_2013 p.timeline_p {
   text-align: right;
 }
+#section_2013 ul {
+  text-align: right;
+}
 
 /* 2016 Section */
 #section_2016 .vertical-line.vertical-line-half-top {
@@ -212,26 +233,45 @@ div.center.fade {
   background-size: cover;
   font-size: 15px;
 }
+#section_circle ul {
+  text-align: left;
+}
 div.rounded {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  border-radius: 120px;
   text-align: center;
   background: #FFF;
+  
+  background: none;
+  border: 4px solid #FFF;
+  transition: background .40s ease;
+  -moz-transition: background .40s ease;
+  -webkit-transition: background .40s ease;
+}
+div.rounded:hover {
+  background: rgba(255,255,255, 0.3);
+}
+div.rounded.rounded-big {
+  width: 150px;
+  height: 150px;
+}
+div.rounded.rounded-big div.number {
+  line-height: 150px;
 }
 div.rounded div.number {
   color: #5a96dd;
+  color: #FFF;
   text-align: center; /* Centro orizzontalmente */
-  line-height: 100px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+  line-height: 120px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
   font-size: 50px;
   font-weight: bold;
 }
 #section_circle .p_left {
   text-align: left;
-  padding: 0 10px;
 }
 
 /* group Section */
@@ -260,16 +300,14 @@ div.rounded div.number {
   position: fixed;
   right: 0;
   top: 50%;
-  margin-top: -80px;
+  margin-top: -50px;
   z-index: 2;
-}
-#slideNav ul {
-  list-style: none;
-  color: #5a5a5a;
-  font-size: 16px;
   text-align: center;
 }
-#slideNav li {
+#slideNav a {
+  color: #5a5a5a;
+  display: block;
+  font-size: 16px;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -280,7 +318,25 @@ div.rounded div.number {
   -moz-transition: opacity .40s ease-in-out;
   -webkit-transition: opacity .40s ease-in-out;
 }
-#slideNav li:hover {
+#slideNav a:last-child {
+  margin-bottom: 0;
+}
+#slideNav a:hover {
   color: #000000;
   opacity: 1;
+}
+
+@media all and (max-width: 767px) {
+  
+  .hide-md {
+    display: none;
+  }
+  
+  .line-bubble {
+    left: 5%;
+  }
+  .vertical-line {
+    left: 5%;
+  }
+  
 }

@@ -13,6 +13,8 @@
     <!--<![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/9.1.1/js/smooth-scroll.min.js"></script>
 
     <!-- Typekit Myriad Pro -->
     <script src="https://use.typekit.net/vgx7qoh.js"></script>
@@ -21,15 +23,11 @@
   <body>
     <div id="slideNav">
       <ul>
-        <li>
-          <a href="#">
-            <i class="fa fa-angle-double-up"></i>
-          </a>
+        <li class="slideUp">
+          <i class="fa fa-angle-double-up"></i>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-angle-double-down"></i>
-          </a>
+        <li class="slideDown">
+          <i class="fa fa-angle-double-down"></i>
         </li>
       </ul>
     </div>
@@ -217,6 +215,42 @@
         </div>
       </div>
     </section>
+    
+    <script>
+      (function () {
+  
+        NodeList.prototype.forEach = Array.prototype.forEach;
+        HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+        NodeList.prototype.on = function (event, listener) {
+          this.forEach(function (el) {
+            el.addEventListener(event, listener);
+          });
+        };
+        
+        // Initialize Smooth Scroll
+        smoothScroll.init();
+        var currentSection = 0;
+        var sections = document.querySelectorAll('body > section');
+        
+        document.querySelector('#slideNav .slideUp').addEventListener('click', function () {
+          if (currentSection === 0) {
+            return;
+          }
+          currentSection -= 1;
+          smoothScroll.animateScroll('#' + sections[currentSection].getAttribute('id'));
+        });
+        
+        document.querySelector('#slideNav .slideDown').addEventListener('click', function () {
+          if (currentSection === sections.length - 1) {
+            return;
+          }
+          currentSection += 1;
+          smoothScroll.animateScroll('#' + sections[currentSection].getAttribute('id'));
+        });
+        
+      })();
+    </script>
 
   </body>
 </html>

@@ -156,7 +156,7 @@ div.center.fade {
 
 /* 1999 Section */
 .bg_blue {
-  min-height: 600px;
+  height:100%;
   background: url('../img/bg_blue.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

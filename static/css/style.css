@@ -275,6 +275,13 @@ div.rounded div.number {
 #section_circle .p_left {
   text-align: left;
 }
+#section_circle .title {
+  top: 15%;
+  left: 50%;
+  margin-left: -140px;
+  position: absolute;
+  color: #fff;
+}
 
 /* group Section */
 #section_group {

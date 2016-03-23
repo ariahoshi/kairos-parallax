@@ -30,6 +30,9 @@ body > section {
 .text-center {
   text-align: center;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
 
 /* headings */
 h1 {
@@ -37,7 +40,6 @@ h1 {
 }
 
 p {
-  text-transform: uppercase;
   line-height: 150%;
 }
 ul {

@@ -175,7 +175,7 @@ div.center.fade {
 /* 1999 Section */
 .bg_blue {
   height:100%;
-  background: url('../img/bg_blue.png') no-repeat center center;
+  background: url('../img/bg_blue.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -206,10 +206,10 @@ div.center.fade {
   background-size: cover;
 }
 #section_2013 p.timeline_p {
-  text-align: right;
+  text-align: left;
 }
 #section_2013 ul {
-  text-align: right;
+  text-align: left;
 }
 
 /* 2016 Section */
@@ -292,6 +292,10 @@ div.rounded div.number {
 }
 #section_group .container {
   max-width: 1000px;
+}
+
+#section_group_1 li, #section_group_2 li{
+  text-align: left;
 }
 
 

@@ -139,6 +139,12 @@ div.center.fade {
   width: 100%;
 }
 
+.rtl{
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
 
 /* Home Section */
 #section_home {

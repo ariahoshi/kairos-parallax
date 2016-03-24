@@ -38,6 +38,10 @@ body > section {
 h1 {
   font-size: 60px;
 }
+h1.bodoni {
+  font-size: 40px;
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
 
 p {
   line-height: 150%;

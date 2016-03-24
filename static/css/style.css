@@ -282,7 +282,6 @@ div.rounded div.number {
   text-align: left;
 }
 #section_circle .title {
-  top: 15%;
   left: 50%;
   margin-left: -140px;
   position: absolute;
@@ -367,5 +366,31 @@ div.rounded div.number {
   .vertical-line {
     left: 5%;
   }
+  #section_1999 div.l-box.text-right {
+    text-align: left;
+  }
   
+  div.rounded {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  }
+  div.rounded.rounded-big {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  border-radius: 120px;
+  }
+  div.rounded.rounded-big div.number {
+    line-height: 120px;
+  }
+  div.rounded div.number {
+    text-align: center; /* Centro orizzontalmente */
+    line-height: 100px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+  }
 }

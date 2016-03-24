@@ -94,6 +94,12 @@ div.center {
 div.center.fade {
   opacity: 1;
 }
+.center ul li {
+  opacity: 0;
+}
+.center ul li.fade {
+  opacity: 1;
+}
 
 .l-box{
   padding: 40px;

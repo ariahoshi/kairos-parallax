@@ -283,6 +283,16 @@ div.rounded div.number {
   color: #fff;
 }
 
+.text-show {
+  opacity: 0;
+  transition: opacity .40s ease;
+  -moz-transition: opacity .40s ease;
+  -webkit-transition: opacity .40s ease;
+}
+.text-show.show {
+  opacity: 1;
+}
+
 /* group Section */
 #section_group {
   height: 100%;

@@ -124,7 +124,7 @@
                 <div class="number">150</div>
               </div>
               <div class="spacer-20"></div>
-              <div class="text-show" style="display:none;">
+              <div class="text-show">
                 <p class="text-uppercase">professionisti</p>
               </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="number">8</div>
               </div>
               <div class="spacer-20"></div>
-              <div class="text-show" style="display:none;">
+              <div class="text-show">
                 <p class="text-uppercase">miliardi di euro in gestione</p>
               </div>
             </div>
@@ -294,8 +294,10 @@
         
       })();
       
-      document.querySelector('.button-show').addEventListener('click', function() {
-         document.querySelector('.text-show').style.display = 'block';
+      document.querySelectorAll('.button-show').forEach(function (button, index) {
+        button.addEventListener('click', function() {
+           document.querySelectorAll('.text-show')[index].classList.add('show');
+        });
       });
       
     </script>

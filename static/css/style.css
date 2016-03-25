@@ -201,7 +201,7 @@ div.center.fade {
 #section_1999 .title {
   top: 20%;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -90px;
   position: absolute;
   color: #fff;
 }
@@ -365,6 +365,10 @@ div.rounded div.number {
   }
   #section_1999 div.l-box.text-right {
     text-align: left;
+  }
+  
+  .l-box{
+    padding: 10px 40px 10px 40px;
   }
   
   div.rounded {

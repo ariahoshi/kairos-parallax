@@ -328,13 +328,7 @@ div.rounded div.number {
   text-align: center;
 }
 #section_group_1 li:before {
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  margin-left: -7px;
-  margin-top: -7px;
-  border-radius: 100%;
+  display:none;
 }
 
 
@@ -437,4 +431,7 @@ div.rounded div.number {
   div.rounded span {
     font-size: 12px;
   }
+  #section_group_1 li span {
+  padding: 10px 20px;
+}
 }

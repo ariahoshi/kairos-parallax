@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/9.1.1/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.1/platform.min.js"></script>
 
     <!-- Typekit Myriad Pro -->
     <script src="https://use.typekit.net/vgx7qoh.js"></script>
@@ -250,6 +251,8 @@
     
     <script>
       (function () {
+
+        window.IE9 = (platform.name === 'IE' && platform.version === '9.0');
   
         NodeList.prototype.forEach = Array.prototype.forEach;
         HTMLCollection.prototype.forEach = Array.prototype.forEach;
@@ -294,15 +297,29 @@
             if (sTop >= -100 && sTop <= 100) {
               // This is the current section
               currentSection = i;
-              
-              el.querySelector('.center').classList.add('fade');
-              
-              el.querySelectorAll('ul li').forEach(function (li, i) {
-                var delay = 400; // Delay in milliseconds
-                setTimeout(function () {
-                  li.classList.add('fade');
-                }, i * delay);
-              });
+
+              var center = el.querySelector('.center')
+              if (center) {
+                if (!window.IE9) {
+                  center.classList.add('fade');
+                } else {
+                  center.className += ' fade';
+                }
+              }
+
+              var li = el.querySelectorAll('ul li');
+              if (li.length > 0) {
+                li.forEach(function (li, i) {
+                  var delay = 400; // Delay in milliseconds
+                  setTimeout(function () {
+                    if (!window.IE9) {
+                      li.classList.add('fade');
+                    } else {
+                      li.className += ' fade';
+                    }
+                  }, i * delay);
+                });
+              }
             }
           });
         };
@@ -314,7 +331,11 @@
       
       document.querySelectorAll('.button-show').forEach(function (button, index) {
         button.addEventListener('click', function() {
-           document.querySelectorAll('.text-show')[index].classList.add('show');
+          if (!window.IE9) {
+            document.querySelectorAll('.text-show')[index].classList.add('show');
+          } else {
+            document.querySelectorAll('.text-show')[index].className += ' show';
+          }
         });
       });
       

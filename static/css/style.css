@@ -355,6 +355,19 @@ div.rounded div.number {
 
 @media all and (max-width: 767px) {
   
+  #section_circle,
+  #section_group_1 {
+    min-height: 100%;
+    height: auto !important;
+  }
+  #section_circle div.center,
+  #section_group_1 div.center {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  
   .hide-md {
     display: none;
   }

@@ -254,6 +254,10 @@ div.center.fade {
   background-size: cover;
   font-size: 15px;
 }
+#section_circle .l-box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 #section_circle ul {
   text-align: left;
 }
@@ -295,10 +299,12 @@ div.rounded div.number {
   text-align: left;
 }
 #section_circle .title {
-  left: 50%;
-  margin-left: -140px;
-  position: absolute;
-  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+#section_circle .title img {
+  display: block;
+  margin: auto;
 }
 
 .text-show {

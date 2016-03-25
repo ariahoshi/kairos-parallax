@@ -317,8 +317,9 @@ div.rounded div.number {
 /* group Section */
 #section_group_1 li, #section_group_2 li{
   text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgba(255,255,255, 0.4)
 }
 
 

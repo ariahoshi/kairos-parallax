@@ -311,19 +311,45 @@
                 }
               }
 
-              var li = el.querySelectorAll('ul li');
-              if (li.length > 0) {
-                li.forEach(function (li, i) {
-                  var delay = 400; // Delay in milliseconds
-                  setTimeout(function () {
-                    if (!window.IE9) {
-                      li.classList.add('fade');
-                    } else {
-                      li.className += ' fade';
-                    }
-                  }, i * delay);
+              var ul = el.querySelectorAll('ul');
+              if (ul.length > 0) {
+                ul.forEach(function (list) {
+                  var li = list.querySelectorAll('li');
+                  if (li.length > 0) {
+                    li.forEach(function (item, i) {
+                      var delay = 400; // Delay in milliseconds
+                      setTimeout(function () {
+                        if (!window.IE9) {
+                          item.classList.add('fade');
+                        } else {
+                          item.className += ' fade';
+                        }
+                      }, i * delay);
+                    });
+                  }
                 });
               }
+              
+              var roundbuttons = el.querySelectorAll('.button-show');
+              if (roundbuttons.length > 0) {
+                roundbuttons.forEach(function (button, index) {
+                  var delay = 800; // Delay in milliseconds
+                  setTimeout(function () {
+                    if (!window.IE9) {
+                      button.classList.add('hover');
+                      setTimeout(function () {
+                        document.querySelectorAll('.text-show')[index].classList.add('show');
+                      }, delay / 2);
+                    } else {
+                      button.className += ' hover';
+                      setTimeout(function () {
+                        document.querySelectorAll('.text-show')[index].className += ' show';
+                      }, delay / 2);
+                    }
+                  }, index * delay);
+                });
+              }
+              
             }
           });
         };
@@ -333,15 +359,7 @@
         
       })();
       
-      document.querySelectorAll('.button-show').forEach(function (button, index) {
-        button.addEventListener('click', function() {
-          if (!window.IE9) {
-            document.querySelectorAll('.text-show')[index].classList.add('show');
-          } else {
-            document.querySelectorAll('.text-show')[index].className += ' show';
-          }
-        });
-      });
+      
       
     </script>
 

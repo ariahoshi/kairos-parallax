@@ -315,12 +315,26 @@ div.rounded div.number {
 }
 
 /* group Section */
-#section_group_1 li, #section_group_2 li{
+#section_group_1 li {
   text-align: left;
-  padding: 10px;
+  padding: 10px 0;
   margin: 10px 0;
   background-color: rgba(255,255,255, 0.4);
   border: solid 1px #FFFFFF;
+}
+#section_group_1 li span {
+  display: block;
+  padding: 0 20px;
+  text-align: center;
+}
+#section_group_1 li:before {
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -7px;
+  margin-top: -7px;
+  border-radius: 100%;
 }
 
 

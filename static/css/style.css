@@ -371,7 +371,23 @@ div.rounded div.number {
     padding: 10px 40px 10px 40px;
   }
   
+  #section_1999 .title {
+    top: 10%;
+  }
+  
+  #section_2016 p.timeline_p {
+    padding: 0 10px;
+  }
+
   div.rounded {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+  }
+  div.rounded.rounded-big {
   width: 100px;
   height: 100px;
   margin: 0 auto;
@@ -379,19 +395,15 @@ div.rounded div.number {
   -moz-border-radius: 100px;
   border-radius: 100px;
   }
-  div.rounded.rounded-big {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  border-radius: 120px;
-  }
   div.rounded.rounded-big div.number {
-    line-height: 120px;
+    line-height: 100px;
   }
   div.rounded div.number {
     text-align: center; /* Centro orizzontalmente */
-    line-height: 100px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+    line-height: 80px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+    font-size: 40px;
+  }
+  div.rounded span {
+    font-size: 12px;
   }
 }

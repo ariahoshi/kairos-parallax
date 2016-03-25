@@ -319,7 +319,8 @@ div.rounded div.number {
   text-align: left;
   padding: 10px;
   margin: 10px 0;
-  background-color: rgba(255,255,255, 0.4)
+  background-color: rgba(255,255,255, 0.4);
+  border: solid 1px #FFFFFF;
 }
 
 

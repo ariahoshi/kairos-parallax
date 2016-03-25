@@ -205,7 +205,7 @@ div.center.fade {
 #section_1999 .title {
   top: 20%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -115px;
   position: absolute;
   color: #fff;
 }
@@ -318,25 +318,6 @@ div.rounded div.number {
 }
 
 /* group Section */
-#section_group {
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-size: 15px;
-}
-#section_group div dl dt {
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: left;
-  padding: 7px 20px;
-}
-#section_group .container {
-  max-width: 1000px;
-}
-
 #section_group_1 li, #section_group_2 li{
   text-align: left;
 }

@@ -373,11 +373,16 @@ div.rounded div.number {
 }
 
 @media all and (max-width: 767px) {
+  
+  body {
+    font-size: 14px;
+  }
     
   #section_circle,
   #section_group_1 {
     min-height: 100%;
     height: auto !important;
+    font-size: 13px;
   }
   #section_circle div.center,
   #section_group_1 div.center {
@@ -401,10 +406,17 @@ div.rounded div.number {
     text-align: left;
   }
   
-  .l-box{
+  .l-box {
     padding: 10px 40px 10px 40px;
   }
   
+  .title img,
+  .container img,
+  .l-box img {
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+  }
   #section_1999 .title {
     top: 10%;
   }
@@ -412,34 +424,32 @@ div.rounded div.number {
   #section_2016 p.timeline_p {
     padding: 0 10px;
   }
-
+  
   div.rounded {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  border-radius: 80px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
   }
   div.rounded.rounded-big {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
   }
   div.rounded.rounded-big div.number {
-    line-height: 100px;
+    line-height: 80px;
   }
   div.rounded div.number {
     text-align: center; /* Centro orizzontalmente */
-    line-height: 80px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
-    font-size: 40px;
+    line-height: 70px; /* Centro verticalmente: altezza dell'interlinea pari all'altezza del cerchio */
+    font-size: 30px;
   }
-  div.rounded span {
-    font-size: 12px;
-  }
+  
   #section_group_1 li span {
   padding: 10px 20px;
 }

@@ -60,6 +60,9 @@ ul li:before {
   border-radius: 3px;
   border: 2px solid #FFF;
 }
+.hide {
+  display: none;
+}
 
 /* spacer */
 .spacer-5 {
@@ -394,6 +397,9 @@ div.rounded div.number {
   
   .hide-md {
     display: none;
+  }
+  .hide {
+    display: block;
   }
   
   .line-bubble {

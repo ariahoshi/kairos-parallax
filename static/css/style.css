@@ -339,13 +339,6 @@ div.rounded div.number {
 #section_group_1 li:before {
   display:none;
 }
-#section_end{
-  height: 100%;
-}
-#section_end div.center div.container img{
-  max-width:50%;
-  max-height:50%;
-}
 
 
 /* Navigation */
@@ -380,7 +373,7 @@ div.rounded div.number {
 }
 
 @media all and (max-width: 767px) {
-  
+    
   #section_circle,
   #section_group_1 {
     min-height: 100%;

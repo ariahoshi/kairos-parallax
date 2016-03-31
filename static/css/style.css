@@ -343,6 +343,11 @@ div.rounded div.number {
   display:none;
 }
 
+/* Section End */
+#section_end div.center div.container img {
+  display: block;
+  margin: 0 auto;
+}
 
 /* Navigation */
 #slideNav { 
@@ -457,6 +462,6 @@ div.rounded div.number {
   }
   
   #section_group_1 li span {
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 }

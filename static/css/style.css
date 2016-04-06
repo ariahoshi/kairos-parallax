@@ -42,6 +42,11 @@ h1.bodoni {
 p {
   line-height: 150%;
 }
+.serif {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400 italic;
+}
+
 ul {
   padding: 0;
 }
@@ -49,6 +54,8 @@ ul li {
   list-style: none;
   position: relative;
   padding: 5px 0 5px 20px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400 italic;
 }
 ul li:before {
   content: '';
@@ -463,5 +470,8 @@ div.rounded div.number {
   
   #section_group_1 li span {
   padding: 5px 20px;
-}
+  }
+  .serif, ul li {
+  font-size: 14px;
+  }
 }

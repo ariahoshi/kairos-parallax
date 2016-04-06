@@ -43,8 +43,9 @@ p {
   line-height: 150%;
 }
 .serif {
-  font-family: 'Crimson Text', serif;
-  font-weight: 400 italic;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 ul {
@@ -54,8 +55,6 @@ ul li {
   list-style: none;
   position: relative;
   padding: 5px 0 5px 20px;
-  font-family: 'Crimson Text', serif;
-  font-weight: 400 italic;
 }
 ul li:before {
   content: '';
@@ -469,7 +468,7 @@ div.rounded div.number {
   }
   
   .serif, ul li {
-    font-size: 14px;
+    font-size: 15px;
   }
 }  
   #section_group_1 li span {

@@ -210,9 +210,13 @@ div.center.fade {
 #section_1999 .title {
   top: 20%;
   left: 50%;
-  margin-left: -90px;
+  margin-left: -123px;
   position: absolute;
   color: #fff;
+}
+#section_1999 .title img:first-child {
+  margin-right: 10px;
+  
 }
 #section_1999 div.center div.container {
   max-width: 1800px;
@@ -240,10 +244,10 @@ div.center.fade {
 
 /* 2016 Section */
 #section_2016 .vertical-line.vertical-line-half-top {
-  bottom: 60%;
+  bottom: 65%;
 }
 #section_2016 .line-bubble {
-  top: 40%;
+  top: 35%;
 }
 #section_2016 .container {
   max-width: 600px;
@@ -420,7 +424,7 @@ div.rounded div.number {
     left: 5%;
   }
   #section_1999 div.l-box.text-right {
-    text-align: left;
+    text-align: center;
   }
   
   .l-box {
@@ -436,6 +440,15 @@ div.rounded div.number {
   }
   #section_1999 .title {
     top: 10%;
+    margin-left: -90px;
+  }
+  .text-center img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #section_2013 div.l-box.text-left {
+    text-align: center;
   }
   
   #section_2016 p.timeline_p {

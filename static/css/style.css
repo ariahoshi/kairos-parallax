@@ -424,7 +424,10 @@ div.rounded div.number {
     left: 5%;
   }
   #section_1999 div.l-box.text-right {
-    text-align: center;
+    text-align: left;
+  }
+  #section_1999 div.l-box.text-right img {
+    margin: 0 auto;
   }
   
   .l-box {
@@ -438,19 +441,23 @@ div.rounded div.number {
     -ms-transform: scale(0.8, 0.8);
     -webkit-transform: scale(0.8, 0.8);
   }
+   .text-center img {
+    margin: 0 auto;
+  }
   #section_1999 .title {
-    top: 10%;
+    top: 6%;
     margin-left: -90px;
   }
-  .text-center img {
-    margin: 0 auto;
-    text-align: center;
-  }
-  
   #section_2013 div.l-box.text-left {
     text-align: center;
   }
+   #section_2013 div.l-box.text-left img {
+    margin: 0 auto;
+  }
   
+  #section_2016 div.container img {
+    margin: 0 auto;
+  }
   #section_2016 p.timeline_p {
     padding: 0 10px;
   }

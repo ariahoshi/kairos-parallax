@@ -423,13 +423,6 @@ div.rounded div.number {
   .vertical-line {
     left: 5%;
   }
-  #section_1999 div.l-box.text-right {
-    text-align: left;
-  }
-  #section_1999 div.l-box.text-right img {
-    margin: 0 auto;
-  }
-  
   .l-box {
     padding: 10px 40px 10px 40px;
   }
@@ -443,6 +436,17 @@ div.rounded div.number {
   }
    .text-center img {
     margin: 0 auto;
+  }
+  #section_1999 div.l-box.text-right {
+    text-align: left;
+    padding-bottom: 0;
+  }
+  #section_1999 div.l-box.text-right img {
+    margin: 0 auto;
+  }
+  
+  #section_1999 .center {
+    margin-top: 30px;
   }
   #section_1999 .title {
     top: 10%;

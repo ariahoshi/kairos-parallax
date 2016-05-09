@@ -244,10 +244,10 @@ div.center.fade {
 
 /* 2016 Section */
 #section_2016 .vertical-line.vertical-line-half-top {
-  bottom: 60%;
+  bottom: 70%;
 }
 #section_2016 .line-bubble {
-  top: 40%;
+  top: 30%;
 }
 #section_2016 .container {
   max-width: 600px;
@@ -358,7 +358,13 @@ div.rounded div.number {
   display: block;
   margin: 0 auto;
 }
-
+#section_end a {
+  color: #ededed;
+  text-decoration: none;
+}
+#section_end a:hover {
+  color: #ffffff;
+}
 /* Navigation */
 #slideNav { 
   position: fixed;

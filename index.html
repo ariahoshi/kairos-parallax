@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kairos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animation.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/9.1.1/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.1/platform.min.js"></script>
+
+    
+  </head>
+  <body>
+    <div id="slideNav" class="hide-md">
+      <a class="slideUp">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <a class="slideDown">
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+    
+    <!-- Home -->
+    <section id="s_intro" data-slide-delay="800" style="background-image: url('https://r.size.li/2/s/60/jpg/1920x1080/https://images.unsplash.com/photo-1468476775582-6bede20f356f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=50c6901b794046c29f94700a8b940ad4');">
+      <div class="center">
+        <div class="container">
+          <img src="static/img/logo_1.png" class="to-animate animation-zoom" width="200" />
+          <div class="spacer-20"></div>
+          <div class="btn to-animate animation-slide-bottom"><a href="#s_secondSlide" data-scroll><i class="fa fa-angle-down"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- secondSlide -->
+    <section id="s_secondSlide" style="background-image: url('https://r.size.li/2/s/60/jpg/1920x1080/https://images.unsplash.com/photo-1465232377925-cce9a9d87843?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c22039e263553d4726f7c32656e792ed');">
+      <div class="center">
+        <div class="container">
+          <p class="to-animate animation-fade">Hello with fade</p>
+          <p class="to-animate animation-fade">Hello with second fade</p>
+          <p class="to-animate animation-slide-left">Hello with slide-left</p>
+          <p class="to-animate animation-slide-right">Hello with slide-right</p>
+          <p class="to-animate animation-slide-top">Hello with slide-top</p>
+          <p class="to-animate animation-slide-bottom">Hello with slide-bottom</p>
+          <button class="pure-button to-animate animation-zoom">
+            Hello with slide-zoom
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <script src="static/js/main.js"></script>
+
+  </body>
+</html>

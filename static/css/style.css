@@ -1,0 +1,182 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+body {
+  font-family: 'myriad-pro', sans-serif;
+  font-weight: 400;
+  border: 0;
+}
+
+body > section {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* headings */
+h1 {
+  font-size: 60px;
+}
+
+h1.bodoni {
+  font-size: 40px;
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+p {
+  line-height: 150%;
+}
+
+.serif {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  border: 2px solid #FFF;
+}
+
+.hide {
+  display: none;
+}
+
+/* spacer */
+.spacer-5 {
+  height: 5px;
+}
+.spacer-10 {
+  height: 10px;
+}
+.spacer-20 {
+  height: 20px;
+}
+.spacer-40 {
+  height: 40px;
+}
+
+
+/* Navigation */
+#slideNav { 
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 2;
+  text-align: center;
+}
+#slideNav a {
+  color: #5a5a5a;
+  display: block;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255,255,255,0.8);
+  margin-bottom: 1px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity .40s ease-in-out;
+  -moz-transition: opacity .40s ease-in-out;
+  -webkit-transition: opacity .40s ease-in-out;
+}
+#slideNav a:last-child {
+  margin-bottom: 0;
+}
+#slideNav a:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+
+/* classi usate like there's no tomorrow -> ahaha divertente */
+div.center {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.l-box{
+  padding: 40px;
+}
+
+.pure-g {
+  max-width: 1800px;
+  width: 100%;
+}
+
+.rtl{
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+
+@media all and (max-width: 767px) {
+  
+  body {
+    font-size: 14px;
+  }
+  
+  .hide-md {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+  
+  .l-box {
+    padding: 10px 40px 10px 40px;
+  }
+}  

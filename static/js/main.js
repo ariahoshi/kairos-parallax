@@ -18,7 +18,7 @@
 
   
   
-  var currentSection = 0;
+  var currentSection = -1;
   var sections = document.querySelectorAll('body > section');
 
   document.querySelector('#slideNav .slideUp').addEventListener('click', function () {
@@ -42,48 +42,55 @@
   var animationDelay = 400;
   var slideDelay = 600;
   
+  
+  var changePage = function (page) {
+    // Check if this section has custom delays
+    var aniDel = page.getAttribute('data-animation-delay') || animationDelay;
+    var sliDel = page.getAttribute('data-slide-delay') || slideDelay;
+
+    setTimeout(function () {
+
+      // Searching for every element with the .to-animate class
+      var animateElements = page.querySelectorAll('.to-animate');
+
+      if (animateElements.length > 0) {
+        // If there are some elements to animate...
+        var animating = 0;
+
+        // ... we will animate them one after the other
+        animateElements.forEach(function (aEl, aElIndex) {
+          if (!window.IE9) {
+            aEl.classList.remove('to-animate');
+          } else {
+            aEl.className.replace('to-animate', '');
+          }
+
+          setTimeout(function () {
+            if (!window.IE9) {
+              aEl.classList.add('animating');
+            } else {
+              aEl.className += ' animating';
+            }
+          }, 10 + aniDel * animating);
+
+          animating = animating + 1;
+        });
+
+      }
+
+    }, sliDel);
+    
+  };
+  
   var scrollHandler = function () {
     sections.forEach(function (el, i) {
       var sTop = el.getBoundingClientRect().top;
       if (sTop >= -100 && sTop <= 100) {
         // This is the current section
-        currentSection = i;
-        
-        // Check if this section has custom delays
-        var aniDel = el.getAttribute('data-animation-delay') || animationDelay;
-        var sliDel = el.getAttribute('data-slide-delay') || slideDelay;
-        
-        setTimeout(function () {
-
-          // Searching for every element with the .to-animate class
-          var animateElements = el.querySelectorAll('.to-animate');
-
-          if (animateElements.length > 0) {
-            // If there are some elements to animate...
-            var animating = 0;
-
-            // ... we will animate them one after the other
-            animateElements.forEach(function (aEl, aElIndex) {
-              if (!window.IE9) {
-                aEl.classList.remove('to-animate');
-              } else {
-                aEl.className.replace('to-animate', '');
-              }
-
-              setTimeout(function () {
-                if (!window.IE9) {
-                  aEl.classList.add('animating');
-                } else {
-                  aEl.className += ' animating';
-                }
-              }, 10 + aniDel * animating);
-
-              animating = animating + 1;
-            });
-
-          }
-          
-        }, sliDel);
+        if (i !== currentSection) {
+          changePage(el);
+          currentSection = i;
+        }
       }
     });
   };

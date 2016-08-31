@@ -12,12 +12,15 @@ body {
 
 body > section {
   position: relative;
+  background-color: blue;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
+  overflow: hidden;
   
   height: 100%;
   width: 100%;
@@ -46,7 +49,21 @@ body > section {
 
 /* headings */
 h1 {
-  font-size: 60px;
+  font-size: 30px;
+  line-height: 1.5em;
+  margin: 0.2em 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.5em;
+  margin: 0.2em 0;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0.2em 0;
 }
 
 h1.bodoni {
@@ -101,6 +118,12 @@ ul li:before {
   height: 40px;
 }
 
+.page-title hr {
+  width: 20%;
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid #FFF;
+}
 
 /* Navigation */
 #slideNav { 
@@ -180,3 +203,15 @@ div.center {
     padding: 10px 40px 10px 40px;
   }
 }  
+
+@media all and (max-width: 420px) {
+  body > section {
+    height: auto;
+    min-height: 100%
+  }
+  
+  div.center {
+    position: static;
+    transform: none;
+  }
+}

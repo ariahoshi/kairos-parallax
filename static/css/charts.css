@@ -1,0 +1,53 @@
+/* COLORS
+ *
+ * rgb(0,46,84)
+ * rgb(122,153,172)
+ * rgb(0,99,142)
+ * rgb(0,130,149)
+ * rgb(141,126,116)
+ * rgb(196,196,196)
+ * rgb(240,181,0)
+ *
+ */
+
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+  stroke: rgb(122,153,172);
+}
+
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut {
+  stroke: rgb(0,99,142);
+}
+
+.ct-series-c .ct-bar,
+.ct-series-c .ct-line,
+.ct-series-c .ct-point,
+.ct-series-c .ct-slice-donut {
+  stroke: rgb(0,130,149);
+}
+
+.ct-series-d .ct-bar,
+.ct-series-d .ct-line,
+.ct-series-d .ct-point,
+.ct-series-d .ct-slice-donut {
+  stroke: rgb(141,126,116);
+}
+
+.ct-series-e .ct-bar,
+.ct-series-e .ct-line,
+.ct-series-e .ct-point,
+.ct-series-e .ct-slice-donut {
+  stroke: rgb(196,196,196);
+}
+
+.ct-series-f .ct-bar,
+.ct-series-f .ct-line,
+.ct-series-f .ct-point,
+.ct-series-f .ct-slice-donut {
+  stroke: rgb(240,181,0);
+}

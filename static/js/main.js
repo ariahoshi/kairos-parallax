@@ -48,11 +48,11 @@
     var aniDel = page.getAttribute('data-animation-delay') || animationDelay;
     var sliDel = page.getAttribute('data-slide-delay') || slideDelay;
 
-    var charts = page.querySelectorAll('.ct-chart');
+    var charts = page.querySelectorAll('.ct-chart[data-animate-chart]');
     if (charts) {
       charts.forEach(function (chart) {
-        var cId = chart.getAttribute('id').replace('#', '');
-
+        window.chartAnimate(chart.getAttribute('data-animate-chart'));
+        chart.removeAttribute('data-animate-chart');
       });
     }
 

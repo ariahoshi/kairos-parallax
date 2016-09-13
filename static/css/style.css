@@ -191,6 +191,16 @@ ul li:before {
   padding-top: 8%;
 }
 
+#s_aboutSlide .pure-table {
+  text-align: left;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+
+#s_aboutSlide .pure-table  thead{
+  background-color: rgba(0,0,0,0.3);
+  color: #FFF;
+}
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
 div.center {

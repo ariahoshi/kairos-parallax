@@ -196,6 +196,10 @@ ul li:before {
   padding-top: 8%;
 }
 
+#s_portafoglio2 .pure-table{
+  text-align: left;
+  margin: 0 auto;
+}
 
 #s_aboutSlide .pure-table {
   text-align: left;
@@ -252,6 +256,7 @@ div.center {
     padding: 10px 40px 10px 40px;
   }
 }  
+
 
 @media all and (max-width: 420px) {
   body > section {

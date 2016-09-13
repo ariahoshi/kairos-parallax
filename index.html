@@ -49,7 +49,7 @@
       </div>
     </section>
     
-     <!-- Allocazione Partenza -->
+    <!-- Allocazione Partenza -->
     <section id="s_allocPartenza" style="background-image:url('https://hd.unsplash.com/photo-1471469478635-911c1858d22e');">
       <div class="center">
         <div class="container">
@@ -62,8 +62,31 @@
               <div class="pure-u-1 pure-u-md-1-2">
                 <div class="ct-chart ct-golden-section left" id="chart1"></div>
               </div>
-              <div class="to-animate animation-fade pure-u-1 pure-u-md-3-8">
-                <p class="text-left">Allocazione bilanciata 80% (obbligazioni)<br /> 20% (azioni) implementata con indici.<br /> Questo significa che il portafoglio è direzionale e non gravato da alcun costo.</p>
+              <div class="to-animate animation-fade pure-u-1 pure-u-md-3-8 text-left">
+                <p>Allocazione bilanciata 80% (obbligazioni)<br /> 20% (azioni) implementata con indici.</p>
+                <p>Questo significa che il portafoglio è direzionale e non gravato da alcun costo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portafoglio 1 -->
+    <section id="s_portafoglio1" style="background-image:url('https://hd.unsplash.com/photo-1446858173142-82ce60cd3d28');">
+      <div class="center">
+        <div class="container">
+          <div class="page-title l-box text-center">
+            <h1 class="to-animate animation-zoom text-uppercase">Portafoglio 1</h1>
+            <h2 class="to-animate animation-fade">Kairos All-In</h2>
+            <hr />
+            <div class="spacer-20"></div>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="ct-chart ct-golden-section left" id="chart2"></div>
+              </div>
+              <div class="to-animate animation-fade pure-u-1 pure-u-md-3-8 text-left">
+                <p>Abbiamo mantenuto un rigoroso vincolo di asset allocation, che consiste nel bilanciare il portafoglio con lo stesso asset mix del portafoglio di partenza (80% fondi obbligazionari e 20% fondi azionari).</p>
               </div>
             </div>
           </div>
@@ -98,7 +121,7 @@
             <h3 class="to-animate animation-slide-left">Abstract della Pagina</h3>
             <hr />
             <div class="spacer-20"></div>
-            <div class="ct-chart ct-golden-section" id="chart2" style="width:60%; height:60%;"></div>
+            <div class="ct-chart ct-golden-section" id="chart3" style="width:60%; height:60%;"></div>
           </div>
         </div>
       </div>
@@ -168,11 +191,71 @@
     window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
   });
 
+  // Initialize a Pie chart in the container with the ID chart2
+  var chart = new Chartist.Pie('#chart2', {
+  series: [6, 6.50, 7.50, 44, 33.50, 2.50],
+  labels: ['Azionario direzionale (b)', 'Azionario non direzionale (a)', 'azionario alternative(a)', 'obbligazionario direzionale(b)', 'obbligazionario non direzionale (a)', 'obbligazionario alternative (a)' ]
+  }, {
+    donut: true,
+    showLabel: false,
+    plugins: [
+        Chartist.plugins.legend()
+    ]
+  });
+
+  chart.on('draw', function(data) {
+    if(data.type === 'slice') {
+      // Get the total path length in order to use for dash array animation
+      var pathLength = data.element._node.getTotalLength();
+
+      // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+
+      // Create animation definition while also assigning an ID to the animation for later sync usage
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 1000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+          fill: 'freeze'
+        }
+      };
+
+      // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+      if(data.index !== 0) {
+        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+      }
+
+      // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+      data.element.attr({
+        'stroke-dashoffset': -pathLength + 'px'
+      });
+
+      // We can't use guided mode as the animations need to rely on setting begin manually
+      // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+      data.element.animate(animationDefinition, false);
+    }
+  });
+
+  // For the sake of the example we update the chart every time it's created with a delay of 8 seconds
+  chart.on('created', function() {
+    if(window.__anim21278907124) {
+      clearTimeout(window.__anim21278907124);
+      window.__anim21278907124 = null;
+    }
+    window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
+  });
+
       
       
-  // Initialize a Line chart in the container with the ID chart2
+  // Initialize a Line chart in the container with the ID chart3
   
-  var chart = new Chartist.Line('#chart2', {
+  var chart = new Chartist.Line('#chart3', {
     labels: ['Apr 10', 'Lug 10', 'Ott 10', 'Gen 11', 'Apr 11', 'Lug 11', 'Ott 11', 'Gen 12' ],
     series: [
       [100, 101.35, 105.40, 104.56, 107.43, 106.79, 105.77, 106.96, 107.24],

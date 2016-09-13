@@ -186,8 +186,9 @@ ul li:before {
   color: #000000;
   opacity: 1;
 }
-#s_allocPartenza div.pure-u-1.pure-u-md-3-8 {
-  padding-top: 10%;
+#s_allocPartenza div.pure-u-1.pure-u-md-3-8,
+#s_portafoglio1 div.pure-u-1.pure-u-md-3-8 {
+  padding-top: 8%;
 }
 
 

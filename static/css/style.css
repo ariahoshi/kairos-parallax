@@ -91,8 +91,13 @@ p {
   font-weight: 300;
 }
 
+
 a{
   color: #FFF;
+}
+
+.blue {
+  color: rgb(0, 46, 84)!important;
 }
 
 .left {
@@ -191,12 +196,12 @@ ul li:before {
   padding-top: 8%;
 }
 
+
 #s_aboutSlide .pure-table {
   text-align: left;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
 }
-
 #s_aboutSlide .pure-table  thead{
   background-color: rgba(255,255,255,0.8);
   color: rgb(88, 88, 88);

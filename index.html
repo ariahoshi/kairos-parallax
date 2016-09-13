@@ -187,19 +187,23 @@
     <script src="static/js/chartist-plugin-legend.js"></script>
 
     <script>
-  // Initialize a Pie chart in the container with the ID chart1
-  var chart = new Chartist.Pie('#chart1', {
-  series: [20, 80],
-  labels: ['Azioni', 'Obbligazioni']
-  }, {
-    donut: true,
-    showLabel: false,
-    plugins: [
-        Chartist.plugins.legend()
-    ]
-  });
 
-  chart.on('draw', function(data) {
+  window.chart = [];
+  // Initialize a Pie chart in the container with the ID chart1
+  window.chart['chart1'] = new Chartist.Pie('#chart1',
+    {
+      series: [20, 80],
+      labels: ['Azioni', 'Obbligazioni']
+    }, {
+      donut: true,
+      showLabel: false,
+      plugins: [
+          Chartist.plugins.legend()
+      ]
+    }
+  );
+
+  window.chart['chart1'].on('draw', function(data) {
     if(data.type === 'slice') {
       // Get the total path length in order to use for dash array animation
       var pathLength = data.element._node.getTotalLength();
@@ -238,17 +242,9 @@
     }
   });
 
-  // For the sake of the example we update the chart every time it's created with a delay of 8 seconds
-  chart.on('created', function() {
-    if(window.__anim21278907124) {
-      clearTimeout(window.__anim21278907124);
-      window.__anim21278907124 = null;
-    }
-    window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
-  });
 
   // Initialize a Pie chart in the container with the ID chart2
-  var chart = new Chartist.Pie('#chart2', {
+  window.chart['chart2'] = new Chartist.Pie('#chart2', {
   series: [6, 6.50, 7.50, 44, 33.50, 2.50],
   labels: ['Azionario direzionale (b)', 'Azionario non direzionale (a)', 'azionario alternative(a)', 'obbligazionario direzionale(b)', 'obbligazionario non direzionale (a)', 'obbligazionario alternative (a)' ]
   }, {
@@ -259,7 +255,7 @@
     ]
   });
 
-  chart.on('draw', function(data) {
+  window.chart['chart2'].on('draw', function(data) {
     if(data.type === 'slice') {
       // Get the total path length in order to use for dash array animation
       var pathLength = data.element._node.getTotalLength();
@@ -298,20 +294,11 @@
     }
   });
 
-  // For the sake of the example we update the chart every time it's created with a delay of 8 seconds
-  chart.on('created', function() {
-    if(window.__anim21278907124) {
-      clearTimeout(window.__anim21278907124);
-      window.__anim21278907124 = null;
-    }
-    window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
-  });
-
 
 
   // Initialize a Line chart in the container with the ID chart3
 
-  var chart = new Chartist.Line('#chart3', {
+  window.chart['chart3'] = new Chartist.Line('#chart3', {
     labels: ['Apr 10', 'Lug 10', 'Ott 10', 'Gen 11', 'Apr 11', 'Lug 11', 'Ott 11', 'Gen 12' ],
     series: [
       [100, 101.35, 105.40, 104.56, 107.43, 106.79, 105.77, 106.96, 107.24],
@@ -327,12 +314,12 @@
     durations = 500;
 
   // Once the chart is fully created we reset the sequence
-  chart.on('created', function() {
+  window.chart['chart3'].on('created', function() {
     seq = 0;
   });
 
   // On each drawn element by Chartist we use the Chartist.Svg API to trigger SMIL animations
-  chart.on('draw', function(data) {
+  window.chart['chart3'].on('draw', function(data) {
     seq++;
 
     if(data.type === 'line') {
@@ -426,14 +413,6 @@
       data.element.animate(animations);
     }
   });
-      // For the sake of the example we update the chart every time it's created with a delay of 10 seconds
-chart.on('created', function() {
-  if(window.__exampleAnimateTimeout) {
-    clearTimeout(window.__exampleAnimateTimeout);
-    window.__exampleAnimateTimeout = null;
-  }
-  window.__exampleAnimateTimeout = setTimeout(chart.update.bind(chart), 12000);
-});
 
 
 </script>

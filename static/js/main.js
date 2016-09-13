@@ -16,8 +16,8 @@
     updateURL: false
   });
 
-  
-  
+
+
   var currentSection = -1;
   var sections = document.querySelectorAll('body > section');
 
@@ -41,12 +41,20 @@
   // Delay between animation
   var animationDelay = 400;
   var slideDelay = 600;
-  
-  
+
+
   var changePage = function (page) {
     // Check if this section has custom delays
     var aniDel = page.getAttribute('data-animation-delay') || animationDelay;
     var sliDel = page.getAttribute('data-slide-delay') || slideDelay;
+
+    var charts = page.querySelectorAll('.ct-chart');
+    if (charts) {
+      charts.forEach(function (chart) {
+        var cId = chart.getAttribute('id').replace('#', '');
+
+      });
+    }
 
     setTimeout(function () {
 
@@ -79,9 +87,9 @@
       }
 
     }, sliDel);
-    
+
   };
-  
+
   var scrollHandler = function () {
     sections.forEach(function (el, i) {
       var sTop = el.getBoundingClientRect().top;

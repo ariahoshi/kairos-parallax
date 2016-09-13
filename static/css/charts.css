@@ -56,6 +56,9 @@
   margin: auto;
   display: block;
 }
+.ct-chart[data-animate-chart] {
+  opacity: 0;
+}
 
 .ct-legend {
   position: relative;

@@ -51,7 +51,10 @@
     var charts = page.querySelectorAll('.ct-chart[data-animate-chart]');
     if (charts) {
       charts.forEach(function (chart) {
-        window.chartAnimate(chart.getAttribute('data-animate-chart'));
+        toAnimate = chart.getAttribute('data-animate-chart');
+        setTimeout(function () {
+          window.chartAnimate(toAnimate);
+        }, 350);
         chart.removeAttribute('data-animate-chart');
       });
     }

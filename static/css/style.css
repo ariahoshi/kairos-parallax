@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-  font-family: 'myriad-pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   border: 0;
 }
@@ -62,7 +62,7 @@ body > section {
 /* headings */
 h1 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5em;
   margin: 0.2em 0;
 }
@@ -88,6 +88,21 @@ h1.bodoni {
 
 p {
   line-height: 150%;
+  font-weight: 300;
+}
+
+a{
+  color: #FFF;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
 }
 
 .serif {
@@ -170,6 +185,9 @@ ul li:before {
 #slideNav a:hover {
   color: #000000;
   opacity: 1;
+}
+#s_allocPartenza div.pure-u-1.pure-u-md-3-8 {
+  padding-top: 10%;
 }
 
 

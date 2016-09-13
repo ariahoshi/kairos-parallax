@@ -81,8 +81,32 @@
 
 .ct-legend.ct-legend-inside {
   position: absolute;
-  top: 0;
+  top: 100%;
+  left: 0;
   right: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.ct-legend.ct-legend-inside li {
+  font-size: 12px;
+  padding-left: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.5s ease;
+}
+.ct-legend.ct-legend-inside li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.ct-legend.ct-legend-inside li + li {
+  margin-left: 20px;
+}
+.ct-legend.ct-legend-inside li:before {
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  top: 50%;
+  margin-top: -6px;
 }
 
 .ct-legend .ct-series-0:before {

@@ -52,6 +52,11 @@
   stroke: rgb(240,181,0);
 }
 
+.ct-chart {
+  margin: auto;
+  display: block;
+}
+
 .ct-legend {
   position: relative;
   z-index: 10;

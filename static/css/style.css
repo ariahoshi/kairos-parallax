@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   border: 0;
 }
@@ -204,7 +204,7 @@ ul li:before {
 #s_aboutSlide .pure-table {
   text-align: left;
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .pure-table  thead{
   background-color: rgba(204, 234, 234, 0.8);
@@ -228,6 +228,7 @@ div.center {
 }
 
 .pure-g {
+  font-family: 'Open Sans', sans-serif;
   max-width: 1800px;
   width: 100%;
 }

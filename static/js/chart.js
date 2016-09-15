@@ -73,7 +73,7 @@
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
           series: [6, 6.50, 7.50, 44, 33.50, 2.50],
-          labels: ['Azionario direzionale (b)', 'Azionario non direzionale (a)', 'azionario alternative(a)', 'obbligazionario direzionale(b)', 'obbligazionario non direzionale (a)', 'obbligazionario alternative (a)' ]
+          labels: ['Azionario direzionale (β)', 'Azionario non direzionale (α)', 'azionario alternative(α)', 'obbligazionario direzionale(β)', 'obbligazionario non direzionale (α)', 'obbligazionario alternative (α)' ]
           }, {
             donut: true,
             showLabel: false,

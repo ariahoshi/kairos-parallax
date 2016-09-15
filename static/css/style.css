@@ -43,6 +43,7 @@ body > section {
   margin: auto;
 }
 
+/* text alignament */
 .text-right {
   text-align: right;
 }
@@ -80,6 +81,13 @@ h3 {
   line-height: 1.5em;
   margin: 0.2em 0;
 }
+h6 {
+  font-size: 10px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 0.2em 0;
+}
 
 h1.bodoni {
   font-size: 40px;
@@ -91,15 +99,13 @@ p {
   font-weight: 300;
 }
 
-
-a{
-  color: #FFF;
+.serif {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.blue {
-  color: rgb(0, 46, 84)!important;
-}
-
+/* float */
 .left {
   float: left;
 }
@@ -108,12 +114,6 @@ a{
 }
 .clear {
   clear: both;
-}
-
-.serif {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 ul {
@@ -133,10 +133,6 @@ ul li:before {
   height: 3px;
   border-radius: 3px;
   border: 2px solid #FFF;
-}
-
-.hide {
-  display: none;
 }
 
 /* spacer */
@@ -191,20 +187,12 @@ ul li:before {
   color: #000000;
   opacity: 1;
 }
-#s_allocPartenza div.pure-u-1.pure-u-md-3-8,
-#s_portafoglio1 div.pure-u-1.pure-u-md-3-8 {
-  padding-top: 8%;
-}
 
-#s_portafoglio2 .pure-table{
-  text-align: left;
-  margin: 0 auto;
-}
-
-#s_aboutSlide .pure-table {
-  text-align: left;
-  display: inline-block;
+/* PureCSS */
+.pure-g {
   font-family: 'Open Sans', sans-serif;
+  max-width: 1800px;
+  width: 100%;
 }
 .pure-table  thead{
   background-color: rgba(204, 234, 234, 0.8);
@@ -223,14 +211,33 @@ div.center {
   transform: translate(0, -50%);
 }
 
-.l-box{
+.hide {
+  display: none;
+}
+
+.l-box {
   padding: 40px;
 }
 
-.pure-g {
-  font-family: 'Open Sans', sans-serif;
-  max-width: 1800px;
-  width: 100%;
+.blue {
+  color: rgb(0, 46, 84)!important;
+}
+
+.round {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.5);
+  border: solid 2px #FFFFFF;
+}
+.round div{
+  width:100px;
+  height:100px;
+  position:relative;
+  left:50%;
+  top:50%;
+  margin-left:-50px;
+  margin-top:-50px;
 }
 
 .rtl{
@@ -240,6 +247,26 @@ div.center {
   direction: ltr;
 }
 
+/* Sezione AllocPartenza */
+#s_allocPartenza div.pure-u-1.pure-u-md-3-8,
+#s_portafoglio1 div.pure-u-1.pure-u-md-3-8 {
+  padding-top: 8%;
+}
+
+/* Sezione portafoglio2 */
+#s_portafoglio2 .pure-table{
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* Sezione aboutSlide */
+#s_aboutSlide .pure-table {
+  text-align: left;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Media */
 @media all and (max-width: 767px) {
   
   body {

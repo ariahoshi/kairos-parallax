@@ -60,6 +60,14 @@
   opacity: 0;
 }
 
+.ct-grid {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.ct-label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .ct-legend {
   position: relative;
   z-index: 10;

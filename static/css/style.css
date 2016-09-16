@@ -190,13 +190,18 @@ ul li:before {
 
 /* PureCSS */
 .pure-g {
-  font-family: 'Open Sans', sans-serif;
   max-width: 1800px;
   width: 100%;
 }
 .pure-table  thead{
   background-color: rgba(204, 234, 234, 0.8);
   color: rgb(0, 46, 84);
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
@@ -223,21 +228,24 @@ div.center {
   color: rgb(0, 46, 84)!important;
 }
 
+.balloon {
+  position: absolute;
+}
 .round {
   width: 120px;
   height: 120px;
+  position: absolute;
   border-radius: 100%;
-  background-color: rgba(255,255,255,0.5);
-  border: solid 2px #FFFFFF;
+  background-color: rgba(204, 234, 234, 0.5);
+  border: solid 2px #FFF;
 }
 .round div{
   width:100px;
-  height:100px;
   position:relative;
   left:50%;
   top:50%;
   margin-left:-50px;
-  margin-top:-50px;
+  margin-top:-25%;
 }
 
 .rtl{
@@ -245,6 +253,11 @@ div.center {
 }
 .ltr {
   direction: ltr;
+}
+
+/* Sezione Intro */
+div.btn a {
+  color: #FFF;
 }
 
 /* Sezione AllocPartenza */

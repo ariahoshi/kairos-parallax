@@ -193,9 +193,19 @@ ul li:before {
   max-width: 1800px;
   width: 100%;
 }
-.pure-table  thead{
+
+.pure-table {
+  max-width: 500px;
+  width: 100%;
+  vertical-align: top;
+  text-align: left;
+}
+.pure-table  thead {
   background-color: rgba(204, 234, 234, 0.8);
   color: rgb(0, 46, 84);
+}
+.pure-table  tfoot {
+  background-color: rgba(204, 234, 234, 0.4);
 }
 
 html, button, input, select, textarea,
@@ -268,16 +278,10 @@ div.btn a {
 
 /* Sezione portafoglio2 */
 #s_portafoglio2 .pure-table{
-  text-align: left;
   margin: 0 auto;
 }
 
 /* Sezione allin */
-#s_allin .pure-table {
-  text-align: left;
-  display: inline-block;
-  font-family: 'Open Sans', sans-serif;
-}
 
 /* Media */
 @media all and (max-width: 767px) {

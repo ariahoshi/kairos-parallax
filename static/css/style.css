@@ -281,6 +281,9 @@ div.btn a {
 }
 
 /* Sezione allin */
+#chart3 {
+  overflow: hidden;
+} 
 
 /* Media */
 @media all and (max-width: 767px) {

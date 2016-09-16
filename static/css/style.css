@@ -231,7 +231,7 @@ div.center {
 }
 
 .l-box {
-  padding: 20px;
+  padding: 40px;
 }
 
 .blue {
@@ -313,12 +313,16 @@ div.btn a {
 }
 
 /* Sezione portafoglio2 */
-#s_portafoglio2 .pure-table{
+#s_portafoglio2 .pure-table,
+#s_portafoglio3 .pure-table{
   margin: 0 auto;
 }
 
 /* Sezione allin */
 #chart3 {
+  overflow: hidden;
+} 
+#chart5 {
   overflow: hidden;
 } 
 

@@ -67,6 +67,10 @@
 .ct-label {
   color: rgba(255, 255, 255, 0.5);
 }
+.ct-chart-line {
+  
+  background-color: rgba(8, 19, 29, 0.4);
+}
 
 .ct-legend {
   position: relative;

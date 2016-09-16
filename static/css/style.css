@@ -193,25 +193,30 @@ ul li:before {
   max-width: 1800px;
   width: 100%;
 }
-
 .pure-table {
   max-width: 500px;
   width: 100%;
   vertical-align: top;
   text-align: left;
+  border: none;
+  margin: 0 auto;
 }
 .pure-table  thead {
-  background-color: rgba(204, 234, 234, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   color: rgb(0, 46, 84);
 }
 .pure-table  tfoot {
-  background-color: rgba(204, 234, 234, 0.4);
+  background-color: rgba(204, 234, 234, 0.6);
+}
+.pure-table .pure-table-odd td {
+  background-color: rgba(204, 234, 234, 0.3);
 }
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
-    font-family: 'Open Sans', sans-serif;
+  /* Set your content font stack here: */
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
@@ -224,6 +229,9 @@ div.center {
   left: 0;
   right: 0;
   transform: translate(0, -50%);
+}
+.padding-lateral-10 {
+  padding: 0 10px;
 }
 
 .hide {
@@ -314,7 +322,8 @@ div.btn a {
 
 /* Sezione portafoglio2 */
 #s_portafoglio2 .pure-table,
-#s_portafoglio3 .pure-table{
+#s_portafoglio3 .pure-table,
+#s_excellence_2 .pure-table{
   margin: 0 auto;
 }
 
@@ -325,6 +334,12 @@ div.btn a {
 #chart5 {
   overflow: hidden;
 } 
+
+/* Sezione portafoglio 3*/
+#s_portafoglio2 .pure-table .pure-table-odd td:nth-child(2),
+#s_portafoglio3 .pure-table .pure-table-odd td:nth-child(2) {
+  background-color: rgba(204, 234, 234, 0.2);
+}
 
 /* Media */
 @media all and (max-width: 767px) {

@@ -239,14 +239,16 @@ div.center {
 }
 
 .balloon {
-  position: absolute;
+  position: relative;
+  display: inline-block;
 }
 .round {
   width: 120px;
-  height: 120px;
-  border-radius: 100%;
+  height: 60px;
+  border-radius: 15px;
   background-color: rgba(204, 234, 234, 0.5);
-  border: solid 2px #FFF;
+  border: solid 5px #FFF;
+  position: absolute;
 }
 .round div{
   width:100px;
@@ -254,7 +256,40 @@ div.center {
   left:50%;
   top:50%;
   margin-left:-50px;
-  margin-top:-20%;
+  margin-top:-18%;
+}
+.round-1{
+  left:105%;
+  top:20px;
+}
+.round-1:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -25px;
+  right: auto;
+  top: -5px;
+  bottom: auto;
+  border: 22px solid;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.round-2 {
+  left:250px;
+  top:65px
+}
+.round-2:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 13px 25px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -13px;
+  top: -25px;
+  left: 85%;
 }
 
 .rtl{
@@ -271,7 +306,8 @@ div.btn a {
 
 /* Sezione AllocPartenza */
 #s_allocPartenza div.pure-u-1.pure-u-md-3-8,
-#s_portafoglio1 div.pure-u-1.pure-u-md-3-8 {
+#s_portafoglio1 div.pure-u-1.pure-u-md-3-8,
+#s_excellence div.pure-u-1.pure-u-md-3-8 {
   padding-top: 8%;
 }
 

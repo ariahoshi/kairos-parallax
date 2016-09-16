@@ -244,7 +244,6 @@ div.center {
 .round {
   width: 120px;
   height: 120px;
-  position: absolute;
   border-radius: 100%;
   background-color: rgba(204, 234, 234, 0.5);
   border: solid 2px #FFF;
@@ -255,7 +254,7 @@ div.center {
   left:50%;
   top:50%;
   margin-left:-50px;
-  margin-top:-25%;
+  margin-top:-20%;
 }
 
 .rtl{

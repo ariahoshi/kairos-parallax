@@ -219,6 +219,20 @@ html, button, input, select, textarea,
   margin: 0 auto;
 }
 
+/* Background */
+.bg_midnight{
+  background-image: url("/static/img/Texture_midnight.jpg")
+}
+.bg_aqua{
+  background-image: url("/static/img/Texture_aqua.jpg")
+}
+.bg_teal{
+  background-image: url("/static/img/Texture_teal.jpg")
+}
+.bg_emerald{
+  background-image: url("/static/img/Texture_emerald.jpg")
+}
+
 /* classi usate like there's no tomorrow -> ahaha divertente */
 div.center {
   text-align: center;
@@ -301,6 +315,33 @@ div.center {
   left: 85%;
 }
 
+.arrow-box {
+  position: relative;
+  background: rgba(0, 130, 149, 0.5);
+  width: 170px;
+}
+.arrow-box:after, .arrow-box:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-box:after {
+  border-color: rgba(0, 130, 149, 0);
+  border-left-color: rgba(0, 130, 149, 0.5);
+  border-width: 38px;
+  margin-top: -38px;
+}
+.arrow-box h1 {
+  line-height: 1.2em;
+  margin: 0.1em 0;
+}
+
 .rtl{
   direction: rtl;
 }
@@ -309,6 +350,10 @@ div.center {
 }
 
 /* Sezione Intro */
+#s_intro,
+#s_disclaimer {
+  background-image: url(/static/img/KairosCerchio.jpg);
+}
 div.btn a {
   color: #FFF;
 }

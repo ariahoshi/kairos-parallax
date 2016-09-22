@@ -124,7 +124,7 @@
 .ct-legend.ct-legend-inside li:before {
   width: 4px;
   height: 4px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   top: 50%;
   margin-top: -6px;
 }

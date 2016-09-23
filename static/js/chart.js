@@ -77,6 +77,7 @@
           legends: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
           }, {
             donut: true,
+            donutWidth: 40,
             showLabel: true,
             plugins: [
                 Chartist.plugins.legend()

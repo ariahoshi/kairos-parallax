@@ -149,11 +149,20 @@ ul li:before {
   height: 40px;
 }
 
-.page-title hr {
+.page-title.l-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
   width: 20%;
-  margin: 20px auto;
+  margin: 10px auto;
   border: none;
   border-top: 2px solid #FFF;
+}
+.page-title h1,
+.page-title h2 {
+  margin: 0;
 }
 
 /* Navigation */
@@ -211,6 +220,11 @@ ul li:before {
 }
 .pure-table .pure-table-odd td {
   background-color: rgba(204, 234, 234, 0.3);
+}
+.pure-table th,
+.pure-table td {
+  padding: 5px 8px;
+  font-size: 14px;
 }
 
 html, button, input, select, textarea,

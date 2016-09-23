@@ -84,7 +84,7 @@ text.ct-label {
 .ct-legend li {
   position: relative;
   padding-left: 23px;
-  margin-bottom: 3px;
+  line-height: 1em;
   text-align: left;
 }
 

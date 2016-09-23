@@ -239,16 +239,16 @@ html, button, input, select, textarea,
 
 /* Background */
 .bg_midnight{
-  background-image: url("/static/img/Texture_midnight.jpg")
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_midnight.jpg")
 }
 .bg_aqua{
-  background-image: url("/static/img/Texture_aqua.jpg")
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_aqua.jpg")
 }
 .bg_teal{
-  background-image: url("/static/img/Texture_teal.jpg")
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_teal.jpg")
 }
 .bg_emerald{
-  background-image: url("/static/img/Texture_emerald.jpg")
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_emerald.jpg")
 }
 
 /* Table Color */
@@ -459,7 +459,7 @@ div.center {
 /* Sezione Intro */
 #s_intro,
 #s_disclaimer {
-  background-image: url(/static/img/KairosCerchio.jpg);
+  background-image: url(http://poligoni.net/kairos/KairosStat/static/img/KairosCerchio.jpg);
 }
 div.btn a {
   color: #FFF;

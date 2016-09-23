@@ -200,6 +200,7 @@ ul li:before {
   text-align: left;
   border: none;
   margin: 0 auto;
+  color: #FFFFFF;
 }
 .pure-table  thead {
   background-color: rgba(255, 255, 255, 0.8);
@@ -231,6 +232,23 @@ html, button, input, select, textarea,
 }
 .bg_emerald{
   background-image: url("/static/img/Texture_emerald.jpg")
+}
+
+/* Table Color */
+.tb_glacier {
+  background-color: rgba(122, 153, 172, 0.5);
+}
+.tb_aegean {
+  background-color: rgba(0, 99, 142, 0.5);
+}
+.tb_sapphire {
+  background-color: rgba(0, 130, 149, 0.5);
+}
+.tb_taupe {
+  background-color: rgba(141, 126, 116, 0.6);
+}
+.tb_sand {
+  background-color: rgba(196, 196, 196, 0.8);
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
@@ -350,6 +368,50 @@ div.center {
 .ltr {
   direction: ltr;
 }
+
+/* Overlay */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(13, 14, 58);
+  background-color: rgba(13, 14, 58, 0.8);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 
 /* Sezione Intro */
 #s_intro,

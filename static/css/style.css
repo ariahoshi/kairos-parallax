@@ -378,8 +378,8 @@ div.center {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(13, 14, 58);
-  background-color: rgba(13, 14, 58, 0.8);
+  background-color: rgb(0, 46, 84);
+  background-color: rgba(0, 46, 84, 0.8);
   overflow-y: hidden;
   transition: 0.5s;
 }

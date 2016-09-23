@@ -319,6 +319,8 @@ div.center {
   position: relative;
   background: rgba(0, 130, 149, 0.5);
   width: 170px;
+  left:50%;
+  margin-left:-85px;
 }
 .arrow-box:after, .arrow-box:before {
   left: 100%;

@@ -262,16 +262,21 @@ div.center {
   right: 0;
   transform: translate(0, -50%);
 }
+
 .padding-lateral-10 {
   padding: 0 10px;
 }
-
-.hide {
-  display: none;
+  
+.padding-vertical {
+  padding: 15px 0;
 }
 
 .l-box {
   padding: 40px;
+}
+
+.hide {
+  display: none;
 }
 
 .blue {
@@ -374,7 +379,7 @@ div.center {
 .overlay {
   height: 0%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -466,6 +471,10 @@ div.btn a {
   
   .l-box {
     padding: 10px 40px 10px 40px;
+  }
+  
+  .padding-vertical {
+    padding: 15px 0;
   }
 }  
 

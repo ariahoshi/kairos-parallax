@@ -73,7 +73,7 @@
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
           series: [6, 6.50, 7.50, 44, 33.50],
-          labels: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE(α)', 'OBBLIGAZIONARIO DIREZIONALE(β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
+          labels: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
           }, {
             donut: true,
             showLabel: false,
@@ -246,7 +246,7 @@
         // Initialize a Pie chart in the container with the ID chart4
         window.chart['chart4'] = new Chartist.Pie('#chart4', {
           series: [20, 20, 45, 15],
-          labels: ['Azionario non direzionale (α)', 'azionario alternative(α)', 'obbligazionario non direzionale (α)', 'altro alternative (α)']
+          labels: ['AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)', 'ALTRO ALTERNATIVE (α)']
           }, {
             donut: true,
             showLabel: false,

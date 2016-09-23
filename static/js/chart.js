@@ -84,9 +84,20 @@
             ]
           }
         );
-
+        
         window.chart['chart2'].on('draw', function(data) {
-          if(data.type === 'slice') {
+          if(data.type === 'label') {
+            
+            data.element.animate({
+              opacity: {
+                begin: data.index * 1000 + 500,
+                dur: 400,
+                from: 0,
+                to: 1
+              }
+            });
+            
+          } else if(data.type === 'slice') {
             // Get the total path length in order to use for dash array animation
             var pathLength = data.element._node.getTotalLength();
 

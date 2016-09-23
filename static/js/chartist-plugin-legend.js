@@ -84,10 +84,10 @@
 
             // Get the right array to use for generating the legend.
             var legendNames = chart.data.series,
-                useLabels = isPieChart && chart.data.labels;
+                useLabels = isPieChart && chart.data.legends;
             if (useLabels) {
-                var originalLabels = chart.data.labels.slice(0);
-                legendNames = chart.data.labels;
+                var originalLabels = chart.data.legends.slice(0);
+                legendNames = chart.data.legends;
             }
             legendNames = options.legendNames || legendNames;
 
@@ -180,7 +180,7 @@
 
                     chart.data.series = seriesCopy;
                     if (useLabels) {
-                        chart.data.labels = labelsCopy;
+                        chart.data.legends = labelsCopy;
                     }
 
                     chart.update();

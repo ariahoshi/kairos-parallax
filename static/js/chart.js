@@ -73,10 +73,11 @@
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
           series: [6, 6.50, 7.50, 44, 33.50],
-          labels: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
+          labels: ['6', '6.50', '7.50', '44', '33.50'],
+          legends: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
           }, {
             donut: true,
-            showLabel: false,
+            showLabel: true,
             plugins: [
                 Chartist.plugins.legend()
             ]

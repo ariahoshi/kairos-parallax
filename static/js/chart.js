@@ -265,10 +265,11 @@
         // Initialize a Pie chart in the container with the ID chart4
         window.chart['chart4'] = new Chartist.Pie('#chart4', {
           series: [20, 20, 45, 15],
-          labels: ['AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)', 'ALTRO ALTERNATIVE (α)']
+          labels: ['20%', '20%', '45%', '15%'],
+          legends: ['AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)', 'ALTRO ALTERNATIVE (α)']
           }, {
             donut: true,
-            showLabel: false,
+            showLabel: true,
             plugins: [
                 Chartist.plugins.legend()
             ]
@@ -276,7 +277,18 @@
         );
 
         window.chart['chart4'].on('draw', function(data) {
-          if(data.type === 'slice') {
+          if(data.type === 'label') {
+            
+            data.element.animate({
+              opacity: {
+                begin: data.index * 1000 + 500,
+                dur: 400,
+                from: 0,
+                to: 1
+              }
+            });
+            
+          } else if(data.type === 'slice') {
             // Get the total path length in order to use for dash array animation
             var pathLength = data.element._node.getTotalLength();
 

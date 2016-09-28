@@ -94,6 +94,16 @@ h1.bodoni {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
+h5.legend {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  margin: 0.2em 0.5em;
+  color: rgba(255, 255,255, 0.8);
+  display: inline;
+}
+
 p {
   line-height: 150%;
   font-weight: 300;
@@ -316,6 +326,19 @@ div.center {
   background: linear-gradient(to bottom, #7a99ac 0%,#002e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a99ac', endColorstr='#002e54',GradientType=0 ); /* IE6-9 */
 }
+.round-box-teal {
+  background: #008295;
+  padding: 10px;
+  border: solid 1px rgb(4, 82, 93);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  background: #7a99ac; /* Old browsers */
+  background: -moz-linear-gradient(top, #02a3ba 0%, #002e54 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #02a3ba 0%,#002e54 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #02a3ba 0%,#002e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a99ac', endColorstr='#002e54',GradientType=0 ); /* IE6-9 */
+}
 
 .balloon {
   position: relative;
@@ -437,6 +460,7 @@ div.center {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
+  display: inline-block;
 }
 
 .rtl{
@@ -455,8 +479,6 @@ div.center {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 46, 84);
-  background-color: rgba(0, 46, 84, 0.8);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -487,6 +509,14 @@ div.center {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+.overlay_blue {
+  background-color: rgb(0, 46, 84);
+  background-color: rgba(0, 46, 84, 0.8);
+}
+.overlay_teal {
+  background-color: rgb(0, 130, 149);
+  background-color: rgba(0, 130, 149, 0.8);
 }
 
 
@@ -551,6 +581,19 @@ div.btn a {
   
   #s_intro div.container {
     padding-top: 50%;
+  }
+  .bg_midnight_md {
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_midnight.jpg")
+  }
+  .bg_teal_md {
+    background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_teal.jpg")
+  }
+  .bg_mid-teal {
+   background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_midteal_hor.jpg")
+  }
+  #s_presentazione .l-box,
+  #s_presentazione .center {
+    padding: 0;
   }
 
 }  

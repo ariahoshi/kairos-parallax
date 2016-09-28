@@ -118,3 +118,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
+
+function openTab() {
+    document.getElementById("TabExcellence").style.height = "100%";
+}
+
+function closeTab() {
+    document.getElementById("TabExcellence").style.height = "0%";
+}

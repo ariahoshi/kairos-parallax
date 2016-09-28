@@ -54,10 +54,13 @@
       <div class="center">
         <div class="container">
           <div class="page-title l-box text-center">
-           <h1 class="to-animate animation-zoom text-uppercase">DUE PROPOSTE DI MODELLO</h1>
-            <div class="spacer-100"></div>
+           <h1 class="to-animate animation-zoom text-uppercase hide-md">DUE PROPOSTE DI MODELLO</h1>
+            <div class="spacer-100 hide-md"></div>
             <div class="pure-g">
-              <div class="pure-u-1 pure-u-md-1-2">
+              <div class="pure-u-1 pure-u-md-1-2 bg_midnight_md"> 
+                <div class="spacer-20 hide"></div>
+                <h1 class="to-animate animation-zoom text-uppercase hide">DUE PROPOSTE DI MODELLO</h1>
+                <div class="spacer-20 hide"></div>
                 <h1 class="to-animate animation-zoom text-uppercase">Portafoglio 1</h1>
                 <div class="box-teal to-animate animation-fade">
                   <h2 class="to-animate animation-fade">Driver Allocazione</h2>
@@ -69,7 +72,8 @@
                 <p class="to-animate animation-fade">Allocazione bilanciata 80% (obbligazioni)<br /> 20% (azioni) implementata con indici.</p>
                 
               </div>
-              <div class="pure-u-1 pure-u-md-1-2">
+              <div class="pure-u-1 pure-u-md-1-2 bg_teal_md">
+                <div class="spacer-20 hide"></div>
                  <h1 class="to-animate animation-zoom text-uppercase">Portafoglio 2</h1>
                 <div class="box-blue to-animate animation-fade">
                   <h2 class="to-animate animation-fade">Driver Volatilità</h2>
@@ -217,7 +221,7 @@
         </div>
       </div>
       
-      <div id="myNav" class="overlay hide-md">
+      <div id="myNav" class="overlay overlay_blue hide-md">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <div class="pure-g to-animate animation-fade">
@@ -338,7 +342,13 @@
             <hr />
           </div>
            <div class="container">
-             <div class="legend-chart"><div class="square tb_glacier"></div> </div>
+             <div class="legend-chart">
+               <div class="square tb_glacier"></div>
+               <h5 class="legend">Kairos All-in</h5>
+               <div class="square tb_aegean"></div>
+               <h5 class="legend">Mercato</h5>
+               <div class="spacer-10"></div>
+             </div>
             <div class="text-center">
               <div class="ct-chart ct-golden-section" id="chart3" data-animate-chart="chart3" style="height: 180px;"></div>
               <div class="spacer-10"></div>
@@ -456,11 +466,248 @@
               <div class="pure-u-1 pure-u-md-1-2">
                 <div class="ct-chart ct-golden-section left" id="chart4" data-animate-chart="chart4"></div>
               </div>
-              <div class="pure-u-1 pure-u-md-3-8 text-left">
+              <div class="pure-u-1 pure-u-md-3-8 text-left">   
+                <div class="spacer-100 hide"></div>
                 <p class="to-animate animation-fade">Un rigoroso vincolo di volatilità (rischio quantitativo) guida le scelte di portafoglio, premesso che il valore aggiunto della gestione Kairos è da attribuire, prevalentemente, alle strategie non direzionali/alternative.</p>
+                 <div class="spacer-20 hide-md"></div>
+                <div  class="hide-md text-center round-box-teal to-animate animation-fade">
+                  <h3 style="cursor:pointer" onclick="openTab()"> Per la composizione del portafoglio clicca qui</h3>
+                </div>
               </div>
             </div>
           </div>
+          <div class="pure-g to-animate animation-fade hide">
+              <div class="pure-u-1 pure-u-md-1-3">
+                <div class="padding-lateral-10">
+                  <table class="pure-table">
+                    <thead>
+                      <tr>
+                        <th>Azionario</th>
+                        <th>Peso</th>
+                        <th>Strategia</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr class="tb_glacier">
+                        <td>KIS - KEY</td>
+                        <td>15,0%</td>
+                        <td>Non Direzionale</td>
+                      </tr>
+
+                      <tr class="tb_aegean">
+                        <td>KIS - Multi-Strategy<br/>UCITS</td>
+                        <td>15,0%</td>
+                        <td>Alterative</td>
+                      </tr>
+
+                      <tr class="tb_glacier">
+                        <td>KIS - Italia</td>
+                        <td>5,0%</td>
+                        <td>Non Direzionale</td>
+                      </tr>
+
+                      <tr class="tb_aegean">
+                        <td>KIS - Pegasus</td>
+                        <td>5,0%</td>
+                        <td>Alterative</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>Totale</th>
+                        <th>40,0%</th>
+                        <th></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+              <div class="spacer-20"></div>
+              <div class="padding-lateral-10">
+                <table class="pure-table">
+                  <thead>
+                    <tr>
+                      <th>Obbligazionario</th>
+                      <th>Peso</th>
+                      <th>Strategia</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr class="tb_sapphire">
+                      <td>KIS - Bond</td>
+                      <td>25,0%</td>
+                      <td>Non Direzionale</td>
+                    </tr>
+
+                    <tr class="tb_sapphire">
+                      <td>KIS - Bond Plus</td>
+                      <td>20,0%</td>
+                      <td>Non Direzionale</td>
+                    </tr>
+
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Totale</th>
+                      <th>45,0%</th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+              <div class="spacer-20"></div>
+              <div class="padding-lateral-10">
+                <table class="pure-table">
+                  <thead>
+                    <tr>
+                      <th>Altro</th>
+                      <th>Peso</th>
+                      <th>Strategia</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr class="tb_taupe">
+                      <td>KIS - Real Return</td>
+                      <td>15,0%</td>
+                      <td>Alternative</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Totale</th>
+                      <th>15,0%</th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="TabExcellence" class="overlay overlay_teal hide-md">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeTab()">&times;</a>
+        <div class="overlay-content">
+          <div class="pure-g to-animate animation-fade">
+            <div class="pure-u-1 pure-u-md-1-3">
+                <div class="padding-lateral-10">
+                  <table class="pure-table">
+                    <thead>
+                      <tr>
+                        <th>Azionario</th>
+                        <th>Peso</th>
+                        <th>Strategia</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr class="tb_glacier">
+                        <td>KIS - KEY</td>
+                        <td>15,0%</td>
+                        <td>Non Direzionale</td>
+                      </tr>
+
+                      <tr class="tb_aegean">
+                        <td>KIS - Multi-Strategy<br/>UCITS</td>
+                        <td>15,0%</td>
+                        <td>Alterative</td>
+                      </tr>
+
+                      <tr class="tb_glacier">
+                        <td>KIS - Italia</td>
+                        <td>5,0%</td>
+                        <td>Non Direzionale</td>
+                      </tr>
+
+                      <tr class="tb_aegean">
+                        <td>KIS - Pegasus</td>
+                        <td>5,0%</td>
+                        <td>Alterative</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>Totale</th>
+                        <th>40,0%</th>
+                        <th></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="padding-lateral-10">
+              <table class="pure-table">
+                <thead>
+                  <tr>
+                    <th>Obbligazionario</th>
+                    <th>Peso</th>
+                    <th>Strategia</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="tb_sapphire">
+                    <td>KIS - Bond</td>
+                    <td>25,0%</td>
+                    <td>Non Direzionale</td>
+                  </tr>
+
+                  <tr class="tb_sapphire">
+                    <td>KIS - Bond Plus</td>
+                    <td>20,0%</td>
+                    <td>Non Direzionale</td>
+                  </tr>
+
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Totale</th>
+                    <th>45,0%</th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="padding-lateral-10">
+              <table class="pure-table">
+                <thead>
+                  <tr>
+                    <th>Altro</th>
+                    <th>Peso</th>
+                    <th>Strategia</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="tb_taupe">
+                    <td>KIS - Real Return</td>
+                    <td>15,0%</td>
+                    <td>Alternative</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Totale</th>
+                    <th>15,0%</th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>

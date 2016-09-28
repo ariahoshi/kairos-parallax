@@ -250,22 +250,25 @@ html, button, input, select, textarea,
 .bg_emerald{
   background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_emerald.jpg")
 }
+.bg_mid-teal{
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_midteal.jpg")
+}
 
 /* Table Color */
 .tb_glacier {
-  background-color: rgba(122, 153, 172, 0.5);
+  background-color: rgba(122, 153, 172, 1);
 }
 .tb_aegean {
-  background-color: rgba(0, 99, 142, 0.5);
+  background-color: rgba(0, 99, 142, 1);
 }
 .tb_sapphire {
-  background-color: rgba(0, 130, 149, 0.5);
+  background-color: rgba(0, 130, 149, 1);
 }
 .tb_taupe {
-  background-color: rgba(141, 126, 116, 0.6);
+  background-color: rgba(141, 126, 116, 1);
 }
 .tb_sand {
-  background-color: rgba(196, 196, 196, 0.8);
+  background-color: rgba(196, 196, 196, 1);
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
@@ -298,6 +301,20 @@ div.center {
 
 .blue {
   color: rgb(0, 46, 84)!important;
+}
+
+.round-box-blue {
+  background: rgb(122, 153, 172);
+  padding: 10px;
+  border: solid 1px rgb(0, 46, 84);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  background: #7a99ac; /* Old browsers */
+  background: -moz-linear-gradient(top, #7a99ac 0%, #002e54 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7a99ac 0%,#002e54 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7a99ac 0%,#002e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a99ac', endColorstr='#002e54',GradientType=0 ); /* IE6-9 */
 }
 
 .balloon {
@@ -376,6 +393,16 @@ div.center {
   left: 85%;
 }
 
+.box-blue {
+  background: rgba(0, 49, 84, 0.5);
+  width: 250px;
+  margin: 0 auto;
+}
+.box-teal {
+  background: rgba(0, 130, 149, 0.5);
+  width: 250px;
+  margin: 0 auto;
+}
 .arrow-box {
   position: relative;
   background: rgba(0, 130, 149, 0.5);
@@ -403,6 +430,13 @@ div.center {
 .arrow-box h1 {
   line-height: 1.2em;
   margin: 0.1em 0;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
 }
 
 .rtl{

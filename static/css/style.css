@@ -361,24 +361,24 @@ div.center {
   margin-top:-18%;
 }
 .round-1{
-  right:-160px;
-  top:5px;
+  right:-50px;
+  bottom:-85px;
 }
 .round-1:before {
-  content: '';
+   content: '';
   position: absolute;
   border-style: solid;
-  border-width: 13px 25px 13px 0;
-  border-color: transparent #FFFFFF;
+  border-width: 0 13px 25px;
+  border-color: #FFFFFF transparent;
   display: block;
   width: 0;
   z-index: 1;
-  margin-top: -13px;
-  left: -25px;
-  top: 28%;
+  margin-left: -13px;
+  top: -25px;
+  left: 35%;
 }
 .round-2 {
-  right:40px;
+  right:90px;
   bottom:-85px;
 }
 .round-2:before {

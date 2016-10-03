@@ -314,30 +314,80 @@ div.center {
 }
 
 .round-box-blue {
-  background: rgb(122, 153, 172);
+  background: rgba(0, 130, 149, 0.7);
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 4px solid rgb(0, 49, 84);
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.round-box-teal {
+  background: #008295;
   padding: 10px;
   border: solid 1px rgb(0, 46, 84);
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
-  background: #7a99ac; /* Old browsers */
-  background: -moz-linear-gradient(top, #7a99ac 0%, #002e54 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #7a99ac 0%,#002e54 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #7a99ac 0%,#002e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a99ac', endColorstr='#002e54',GradientType=0 ); /* IE6-9 */
-}
-.round-box-teal {
-  background: #008295;
-  padding: 10px;
-  border: solid 1px rgb(4, 82, 93);
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
+  border-bottom: 4px solid rgb(0, 49, 84);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   background: #7a99ac; /* Old browsers */
   background: -moz-linear-gradient(top, #02a3ba 0%, #002e54 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #02a3ba 0%,#002e54 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, #02a3ba 50%,#002e54 50%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #02a3ba 0%,#002e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a99ac', endColorstr='#002e54',GradientType=0 ); /* IE6-9 */
+}
+div.h_teal span {
+  position: relative; 
+  padding: 3px 5px;
+}
+div.h_teal span:before {
+  position: absolute ;
+  content: '' ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0;
+  background: rgba(0, 130, 149, 0.5);
+  z-index: -1;
+  transform: rotate(3deg);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+div.h_blue span {
+  position: relative; 
+  padding: 3px 5px;
+}
+div.h_blue span:before {
+  position: absolute ;
+  content: '' ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0;
+  background: rgba(0, 49, 84, 0.6);
+  z-index: -1;
+  transform: rotate(3deg);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.grain {
+  position: relative;
+  padding: 3px 6px;
+  font-style: normal;
+}
+
+.grain:after {
+  content: '';
+  position: absolute;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0;
+  opacity: .11;
+  transform: rotate(3deg);
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+  -webkit-animation: grain 0.5s steps(1) infinite;
+  animation: grain 0.5s steps(1) infinite;
 }
 
 .balloon {
@@ -417,15 +467,28 @@ div.center {
 }
 
 .box-blue {
-  background: rgba(0, 49, 84, 0.5);
+  background: rgba(0, 49, 84, 0.6);
   width: 250px;
   margin: 0 auto;
+  border-bottom: 4px solid rgb(0, 49, 84);
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .box-teal {
   background: rgba(0, 130, 149, 0.5);
   width: 250px;
   margin: 0 auto;
+  border-bottom: 4px solid rgb(5, 65, 74);
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
+
+
+
 .arrow-box {
   position: relative;
   background: rgba(0, 130, 149, 0.5);

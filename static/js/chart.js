@@ -15,16 +15,18 @@
 
   window.chartAnimate = function (chartId) {
     switch (chartId) {
+      
+
       case 'chart1':
         // Initialize a Pie chart in the container with the ID chart1
-        window.chart['chart1'] = new Chartist.Pie('#chart1',
-          {
-            series: [20, 80],
-            labels: ['Azioni', 'Obbligazioni']
+        window.chart['chart1'] = new Chartist.Pie('#chart1', {
+          series: [20, 80],
+          labels: ['20%', '80%'],
+          legends: ['AZIONARIO', 'OBBLIGAZIONARIO']
           }, {
             donut: true,
-            donutWidth: 150,
-            showLabel: false,
+            donutWidth: 100,
+            showLabel: true,
             plugins: [
                 Chartist.plugins.legend({
                   clickable: false
@@ -32,9 +34,20 @@
             ]
           }
         );
-
+        
         window.chart['chart1'].on('draw', function(data) {
-          if(data.type === 'slice') {
+          if(data.type === 'label') {
+            
+            data.element.animate({
+              opacity: {
+                begin: data.index * 1000 + 500,
+                dur: 400,
+                from: 0,
+                to: 1
+              }
+            });
+            
+          } else if(data.type === 'slice') {
             // Get the total path length in order to use for dash array animation
             var pathLength = data.element._node.getTotalLength();
 
@@ -71,7 +84,8 @@
             data.element.animate(animationDefinition, false);
           }
         });
-
+        
+        
       case 'chart2':
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {

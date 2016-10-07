@@ -713,6 +713,7 @@ div.h_blue span:before {
 /* Sezione disclaimer */
 #s_disclaimer hr {
   width: 200px;
+  border-top-width: 1px;
 }
 .disclaimer-contact {
   font-size: 14px;
@@ -722,6 +723,10 @@ div.h_blue span:before {
 }
 .disclaimer-contact a {
   color: #FFF;
+  text-decoration: none;
+}
+.disclaimer-contact a:hover {
+  text-decoration: underline;
 }
 .disclaimer-text {
   font-size: 12px;

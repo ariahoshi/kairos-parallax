@@ -239,6 +239,18 @@ hr {
   padding: 5px 8px;
   font-size: 14px;
 }
+.pure-table td span.t-value {
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+.pure-table td span.t-scale {
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {

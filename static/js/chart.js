@@ -26,7 +26,9 @@
             donutWidth: 150,
             showLabel: false,
             plugins: [
-                Chartist.plugins.legend()
+                Chartist.plugins.legend({
+                  clickable: false
+                })
             ]
           }
         );
@@ -81,7 +83,9 @@
             donutWidth: 100,
             showLabel: true,
             plugins: [
-                Chartist.plugins.legend()
+                Chartist.plugins.legend({
+                  clickable: false
+                })
             ]
           }
         );
@@ -273,7 +277,9 @@
             donutWidth: 150,
             showLabel: true,
             plugins: [
-                Chartist.plugins.legend()
+                Chartist.plugins.legend({
+                  clickable: false
+                })
             ]
           }
         );

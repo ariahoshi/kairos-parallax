@@ -292,6 +292,9 @@ html, button, input, select, textarea,
 .tb_sand {
   background-color: rgba(196, 196, 196, 1);
 }
+.tb_sand td {
+  border-left-color: rgba(255, 255, 255, 0.9);
+}
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
 div.center {

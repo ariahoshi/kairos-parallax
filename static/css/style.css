@@ -295,6 +295,9 @@ html, button, input, select, textarea,
 .tb_sand td {
   border-left-color: rgba(255, 255, 255, 0.9);
 }
+td.tb_acid {
+  background-color: rgba(183, 191, 16, 1);
+}
 
 /* classi usate like there's no tomorrow -> ahaha divertente */
 div.center {
@@ -564,8 +567,8 @@ button {
   text-decoration: none;
   font-size: 18px;
   display: block;
-  padding: 20px;
-  width: 240px;
+  padding: 15px;
+  width: 420px;
   text-align: center;
   border:0px;
   outline:0px;
@@ -580,13 +583,13 @@ button {
   -o-transition: all .1.5s ease;
   transition: all .1.5s ease;
 
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 
-  -webkit-box-shadow: 0px 9px 0px rgba(5, 65, 74,1), 0px 9px 25px rgba(0,0,0,.7);
-  -moz-box-shadow: 0px 9px 0px rgba(5, 65, 74,1), 0px 9px 25px rgba(0,0,0,.7);
-  box-shadow: 0px 9px 0px rgba(5, 65, 74,1), 0px 9px 25px rgba(0,0,0,.7);
+  -webkit-box-shadow: 0px 7px 0px rgba(5, 65, 74,1), 0px 7px 22px rgba(0,0,0,.7);
+  -moz-box-shadow: 0px 7px 0px rgba(5, 65, 74,1), 0px 7px 22px rgba(0,0,0,.7);
+  box-shadow: 0px 7px 0px rgba(5, 65, 74,1), 0px 7px 22px rgba(0,0,0,.7);
 }
 
 /* When the button is pushed or active */
@@ -598,33 +601,9 @@ button {
   top: 10px;
   border:0px;
 }
-.bot-blue {
-  background-color: rgb(0, 73, 126);
-  -webkit-transition: all .1.5s ease;
-  -moz-transition: all .1.5s ease;
-  -ms-transition: all .1.5s ease;
-  -o-transition: all .1.5s ease;
-  transition: all .1.5s ease;
-
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-
-  -webkit-box-shadow: 0px 9px 0px rgba(0, 49, 84, 1), 0px 9px 25px rgba(0,0,0,.7);
-  -moz-box-shadow: 0px 9px 0px rgba(0, 49, 84, 1), 0px 9px 25px rgba(0,0,0,.7);
-  box-shadow: 0px 9px 0px rgba(0, 49, 84, 1), 0px 9px 25px rgba(0,0,0,.7);
+.button-center {
+  margin: 0 auto;
 }
-
-/* When the button is pushed or active */
-.bot-blue:active {
-  -webkit-box-shadow: 0px 3px 0px rgba(0, 49, 84, 1), 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px rgba(0, 49, 84, 1), 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px rgba(0, 49, 84, 1), 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 10px;
-  border:0px;
-}
-
 
 /* Sezione Presentazione */
 div.h_teal span {

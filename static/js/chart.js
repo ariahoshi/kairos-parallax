@@ -23,6 +23,7 @@
             labels: ['Azioni', 'Obbligazioni']
           }, {
             donut: true,
+            donutWidth: 150,
             showLabel: false,
             plugins: [
                 Chartist.plugins.legend()
@@ -77,7 +78,7 @@
           legends: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
           }, {
             donut: true,
-            donutWidth: 40,
+            donutWidth: 100,
             showLabel: true,
             plugins: [
                 Chartist.plugins.legend()
@@ -269,6 +270,7 @@
           legends: ['AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)', 'ALTRO ALTERNATIVE (α)']
           }, {
             donut: true,
+            donutWidth: 150,
             showLabel: true,
             plugins: [
                 Chartist.plugins.legend()

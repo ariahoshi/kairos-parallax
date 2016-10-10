@@ -292,6 +292,12 @@ html, button, input, select, textarea,
 .tb_sand {
   background-color: rgba(196, 196, 196, 1);
 }
+.tb_golden {
+  background-color: rgb(234,171,0);
+}
+.tb_rust {
+  background-color: rgb(189,79,25);
+}
 .tb_sand td {
   border-left-color: rgba(255, 255, 255, 0.9);
 }

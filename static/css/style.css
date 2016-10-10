@@ -301,8 +301,8 @@ html, button, input, select, textarea,
 .tb_sand td {
   border-left-color: rgba(255, 255, 255, 0.9);
 }
-td.tb_acid {
-  background-color: rgba(183, 191, 16, 1);
+td.tb_rust {
+  background-color: rgb(189,79,25);
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */

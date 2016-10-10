@@ -179,3 +179,11 @@ text.ct-label {
   background-color: rgb(189,79,25);
   border-color: rgb(189,79,25);
 }
+
+
+#chart3 .ct-series-b .ct-bar,
+#chart3 .ct-series-b .ct-line,
+#chart3 .ct-series-b .ct-point,
+#chart3 .ct-series-b .ct-slice-donut {
+  stroke: rgb(189,79,25);
+}

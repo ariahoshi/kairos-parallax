@@ -430,7 +430,7 @@
           </div>
           <div class="container">
           <div class="page-title text-center">
-            <div class="hide-md">
+            <div class="hide-md to-animate animation-fade">
               <button style="cursor:pointer" onclick="openNav1()" class="bot-teal button-center">Rivedi la composizione del portafoglio</button>
             </div>
             <div class="spacer-10"></div>
@@ -490,11 +490,11 @@
               <div class="spacer-40"></div>
               <div class="balloon"> 
                 <h1 class="to-animate animation-fade">α&sup1; = 35,31% - 21,89% = 13,42%</h1>
-                <div class="round round-1 to-animate animation-slide-right hide-md">
+                <div class="round round-1 to-animate animation-slide-right hide-md" onclick="openOverRound1()">
                   <div class="text-center">+3,17% direzionale</div>
-                </div>
+                  </div>
                 <div class="round round-2 to-animate animation-slide-bottom hide-md">
-                  <div class="text-center">+10,25% non direzionale***</div>
+                  <div class="text-center">+10,25% non direzionale<span style="font-size:10px;">***</span></div>
                 </div>
                 <div class="round round-3 to-animate animation-slide-bottom hide">
                   <div class="text-center">
@@ -625,6 +625,76 @@
                   <tr>
                     <th>Totale</th>
                     <th class="text-center"><span class="t-value">80%</span></th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <div id="overRound1" class="overlay overlay_blue hide-md">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverRound1()">&times;</a>
+        <div class="overlay-content">
+          <div class="pure-g to-animate animation-fade">
+            <div class="pure-u-1 pure-u-md-1-2">
+             <table class="pure-table">
+                <thead>
+                  <tr>
+                    <th>Azionario</th>
+                    <th>Peso</th>
+                    <th>Strategia</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="tb_sapphire">
+                    <td>KIS Multi-Strategy UCITS</td>
+                    <td class="text-center"><span class="t-value">7,5%</span></td>
+                    <td>Liquid Alternative</td>
+                  </tr>
+
+                  <tr class="tb_sapphire">
+                    <td>KIS KEY</td>
+                    <td class="text-center"><span class="t-value">4,0%</span></td>
+                    <td>Liquid Alternative</td>
+                  </tr>
+
+                  <tr class="tb_glacier">
+                    <td>KIS Europa</td>
+                    <td class="text-center"><span class="t-value">3,0%</span></td>
+                    <td>Direzionale</td>
+                  </tr>
+
+                  <tr class="tb_sapphire">
+                    <td>KIS Italia</td>
+                    <td class="text-center"><span class="t-value">2,5%</span></td>
+                    <td>Liquid Alternative</td>
+                  </tr>
+
+                  <tr class="tb_glacier">
+                    <td>KIS America</td>
+                    <td class="text-center"><span class="t-value">2,0%</span></td>
+                    <td>Direzionale</td>
+                  </tr>
+
+                  <tr class="tb_glacier">
+                    <td>KIS Risorgimento</td>
+                    <td class="text-center"><span class="t-value">0,5%</span></td>
+                    <td>Direzionale</td>
+                  </tr>
+
+                  <tr class="tb_glacier">
+                    <td>KIS Emerging Markets</td>
+                    <td class="text-center"><span class="t-value">0,5%</span></td>
+                    <td>Direzionale</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Totale</th>
+                    <th class="text-center"><span class="t-value">20%</span></th>
                     <th></th>
                   </tr>
                 </tfoot>
@@ -797,7 +867,7 @@
                       </tr>
 
                       <tr class="tb_glacier">
-                        <td>KIS Multi-Strategy<br/>UCITS</td>
+                        <td>KIS Multi-Strategy UCITS</td>
                         <td>15,0%</td>
                         <td>Liquid Alternative</td>
                       </tr>
@@ -809,7 +879,7 @@
                       </tr>
 
                       <tr class="tb_glacier">
-                        <td>KIS Pegasus</td>
+                        <td>KIS Pegasus UCITS</td>
                         <td>5,0%</td>
                         <td>Liquid Alternative</td>
                       </tr>
@@ -895,12 +965,12 @@
 
 
     
-    <!-- Portafoglio 3 -->
+    <!-- Kairos Excellence -->
     <section id="s_portafoglio3" class="bg_teal">
       <div class="center">
         <div class="container">
           <div class="page-title l-box text-center">
-            <h1 class="to-animate animation-zoom text-uppercase">Portafogli a confronto</h1>
+            <h1 class="to-animate animation-zoom text-uppercase">KAIROS EXCELLENCE</h1>
             <h2 class="to-animate animation-fade">Confronto col Portafoglio Base</h2>
             <hr />
           </div>
@@ -909,7 +979,7 @@
              <div class="legend-chart">
                <div class="square tb_glacier"></div>
                <h5 class="legend">Kairos Excellence</h5>
-               <div class="square tb_aegean"></div>
+               <div class="square tb_rust"></div>
                <h5 class="legend">Portafoglio Base</h5>
                <div class="spacer-10"></div>
              </div>

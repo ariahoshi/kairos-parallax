@@ -125,6 +125,20 @@ function openNav1() {
 function closeNav1() {
     document.getElementById("myNav1").style.height = "0%";
 }
+function openOverRound1() {
+    document.getElementById("overRound1").style.height = "100%";
+}
+
+function closeOverRound1() {
+    document.getElementById("overRound1").style.height = "0%";
+}
+function openOverRound2() {
+    document.getElementById("overRound2").style.height = "100%";
+}
+
+function closeOverRound2() {
+    document.getElementById("overRound2").style.height = "0%";
+}
 
 function openTab() {
     document.getElementById("TabExcellence").style.height = "100%";

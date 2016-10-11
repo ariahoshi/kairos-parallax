@@ -376,7 +376,7 @@ div.center {
   border: solid 5px #FFF;
   position: absolute;
 }
-.round div{
+.round div {
   width:100px;
   position:relative;
   left:50%;
@@ -384,7 +384,7 @@ div.center {
   margin-left:-50px;
   margin-top:-18%;
 }
-.round-1{
+.round-1 {
   right:-50px;
   bottom:-85px;
 }
@@ -400,6 +400,9 @@ div.center {
   margin-left: -13px;
   top: -25px;
   left: 35%;
+}
+.round-1:hover {
+  cursor: pointer;
 }
 .round-2 {
   right:90px;
@@ -417,6 +420,9 @@ div.center {
   margin-left: -13px;
   top: -25px;
   left: 85%;
+}
+.round-2:hover {
+  cursor: pointer;
 }
 .round-3 {
   right:135px;

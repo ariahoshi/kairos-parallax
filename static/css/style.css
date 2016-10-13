@@ -301,8 +301,27 @@ html, button, input, select, textarea,
 .tb_sand td {
   border-left-color: rgba(255, 255, 255, 0.9);
 }
+
 td.tb_rust {
   background-color: rgb(189,79,25);
+}
+td.tb_glacier {
+  background-color: rgba(122, 153, 172, 1);
+}
+td.tb_aegean {
+  background-color: rgba(0, 99, 142, 1);
+}
+td.tb_sapphire {
+  background-color: rgba(0, 130, 149, 1);
+}
+td.tb_taupe {
+  background-color: rgba(141, 126, 116, 1);
+}
+td.tb_sand {
+  background-color: rgba(196, 196, 196, 1);
+}
+td.tb_golden {
+  background-color: rgb(234,171,0);
 }
 
 /* classi usate like there's no tomorrow -> ahaha divertente */

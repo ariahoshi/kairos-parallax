@@ -147,3 +147,17 @@ function openTab() {
 function closeTab() {
     document.getElementById("TabExcellence").style.height = "0%";
 }
+function openOverRoundex1() {
+    document.getElementById("overRoundex1").style.height = "100%";
+}
+
+function closeOverRoundex1() {
+    document.getElementById("overRoundex1").style.height = "0%";
+}
+function openOverRoundex2() {
+    document.getElementById("overRoundex2").style.height = "100%";
+}
+
+function closeOverRoundex2() {
+    document.getElementById("overRoundex2").style.height = "0%";
+}

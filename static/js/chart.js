@@ -91,7 +91,7 @@
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
           series: [6, 6.50, 7.50, 44, 33.50],
           labels: ['6%', '6.50%', '7.50%', '44%', '36%'],
-          legends: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO NON DIREZIONALE (α)', 'AZIONARIO ALTERNATIVE (α)', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
+          legends: ['AZIONARIO DIREZIONALE (β)', 'LIQUID ALTERNATIVE', 'LIQUID ALTERNATIVE', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
           }, {
             donut: true,
             donutWidth: 75,

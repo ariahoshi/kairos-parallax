@@ -147,6 +147,13 @@ function openTab() {
 function closeTab() {
     document.getElementById("TabExcellence").style.height = "0%";
 }
+function openTabEx2() {
+    document.getElementById("TabExcellence2").style.height = "100%";
+}
+
+function closeTabEx2() {
+    document.getElementById("TabExcellence2").style.height = "0%";
+}
 function openOverRoundex1() {
     document.getElementById("overRoundex1").style.height = "100%";
 }

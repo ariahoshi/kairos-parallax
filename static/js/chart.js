@@ -281,7 +281,7 @@
           labels: ['40%', '45%', '15%']
           }, {
             donut: true,
-            donutWidth: 125,
+            donutWidth: 75,
             showLabel: true
           }
         );

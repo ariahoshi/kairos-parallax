@@ -820,4 +820,7 @@ div.h_blue span:before {
   .disclaimer-contact {
     width: 100%;
   }
+  .round-3 {
+    right:100px;
+  }
 }

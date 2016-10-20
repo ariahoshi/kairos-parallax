@@ -90,17 +90,11 @@
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
           series: [6, 14, 44, 36],
-          labels: ['6%', '14%', '44%', '36%'],
-          legends: ['AZIONARIO DIREZIONALE (β)', 'AZIONARIO LIQUID ALTERNATIVE', 'OBBLIGAZIONARIO DIREZIONALE (β)', 'OBBLIGAZIONARIO NON DIREZIONALE (α)']
+          labels: ['6%', '14%', '44%', '36%']
           }, {
             donut: true,
             donutWidth: 75,
-            showLabel: true,
-            plugins: [
-                Chartist.plugins.legend({
-                  clickable: false
-                })
-            ]
+            showLabel: true
           }
         );
         
@@ -284,17 +278,11 @@
         // Initialize a Pie chart in the container with the ID chart4
         window.chart['chart4'] = new Chartist.Pie('#chart4', {
           series: [40, 45, 15],
-          labels: ['40%', '45%', '15%'],
-          legends: ['AZIONARIO LIQUID ALTERNATIVE', 'OBBLIGAZIONARIO NON DIREZIONALE (α)', 'ALTRO ALTERNATIVE']
+          labels: ['40%', '45%', '15%']
           }, {
             donut: true,
             donutWidth: 125,
-            showLabel: true,
-            plugins: [
-                Chartist.plugins.legend({
-                  clickable: false
-                })
-            ]
+            showLabel: true
           }
         );
 

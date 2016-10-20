@@ -166,14 +166,14 @@ text.ct-label {
 /* CUSTOM CSS */
 
 #chart1 .ct-series-a .ct-slice-donut {
-  stroke: rgb(234,171,0);
+  stroke: rgb(231,155,16);
 }
 #chart1 .ct-series-b .ct-slice-donut {
   stroke: rgb(189,79,25);
 }
 #chart1 .ct-legend .ct-series-0:before {
-  background-color: rgb(234,171,0);
-  border-color: rgb(234,171,0);
+  background-color: rgb(231,155,16);
+  border-color: rgb(231,155,16);
 }
 #chart1 .ct-legend .ct-series-1:before {
   background-color: rgb(189,79,25);

@@ -207,6 +207,6 @@ text.ct-label {
   stroke: rgb(122, 153, 172);
 }
 
-.ct-legend.ct-legend-inside li + li {
-  margin: 0;
+.ct-legend.ct-legend-inside li {
+  margin: 0 5px!important;
 }

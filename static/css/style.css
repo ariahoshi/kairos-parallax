@@ -733,13 +733,13 @@ div.h_blue span:before {
 }
 .disclaimer-contact {
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   width: 200px;
   margin: auto;
 }
 .disclaimer-contact a {
   color: #FFF;
-  text-decoration: none;
+  text-decoration: none; 
 }
 .disclaimer-contact a:hover {
   text-decoration: underline;

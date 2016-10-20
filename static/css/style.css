@@ -607,7 +607,7 @@ button {
   font-size: 18px;
   display: block;
   padding: 15px;
-  width: 420px;
+  max-width: 100%;
   text-align: center;
   border:0px;
   outline:0px;

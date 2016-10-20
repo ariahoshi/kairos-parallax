@@ -210,3 +210,10 @@ text.ct-label {
 .ct-legend.ct-legend-inside li {
   margin: 0 5px!important;
 }
+
+@media all and (max-width: 380px) {
+  .ct-legend.ct-legend-inside {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

@@ -817,4 +817,7 @@ div.h_blue span:before {
   .pure-table th {
     font-size: 10px;
   }
+  .disclaimer-contact {
+    width: 100%;
+  }
 }

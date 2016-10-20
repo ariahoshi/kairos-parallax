@@ -25,7 +25,7 @@
           legends: ['AZIONARIO', 'OBBLIGAZIONARIO']
           }, {
             donut: true,
-            donutWidth: 75,
+            donutWidth: 70,
             showLabel: true,
             plugins: [
                 Chartist.plugins.legend({
@@ -93,7 +93,7 @@
           labels: ['6%', '14%', '44%', '36%']
           }, {
             donut: true,
-            donutWidth: 75,
+            donutWidth: 70,
             showLabel: true
           }
         );
@@ -281,7 +281,7 @@
           labels: ['40%', '45%', '15%']
           }, {
             donut: true,
-            donutWidth: 75,
+            donutWidth: 70,
             showLabel: true
           }
         );

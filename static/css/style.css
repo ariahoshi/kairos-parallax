@@ -239,13 +239,15 @@ hr {
   padding: 5px 8px;
   font-size: 14px;
 }
-.pure-table td span.t-value {
+.pure-table td span.t-value,
+.pure-table th span.t-value {
   width: 45px;
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 }
-.pure-table td span.t-scale {
+.pure-table td span.t-scale,
+.pure-table th span.t-scale{
   width: 20px;
   display: inline-block;
   vertical-align: middle;
@@ -803,5 +805,16 @@ div.h_blue span:before {
     position: static;
     transform: none;
     padding: 3em 0;
+  }
+  .pure-table td,
+  .pure-table th {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .pure-table td,
+  .pure-table th {
+    font-size: 10px;
   }
 }

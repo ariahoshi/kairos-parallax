@@ -278,6 +278,9 @@ html, button, input, select, textarea,
 .bg_gold{
   background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_gold.jpg")
 }
+.bg_green{
+  background-image: url("http://poligoni.net/kairos/KairosStat/static/img/Texture_green.jpg")
+}
 
 /* Table Color */
 .tb_glacier {

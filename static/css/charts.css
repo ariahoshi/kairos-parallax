@@ -206,3 +206,10 @@ text.ct-label {
 #chart5 .ct-series-b .ct-slice-donut {
   stroke: rgb(122, 153, 172);
 }
+
+
+@media all and (max-width: 420px) {
+  .ct-legend.ct-legend-inside li + li {
+    margin: 0;
+  }
+}

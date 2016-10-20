@@ -181,16 +181,28 @@ text.ct-label {
 }
 
 
+#chart3 .ct-series-a .ct-bar,
+#chart3 .ct-series-a .ct-line,
+#chart3 .ct-series-a .ct-point,
+#chart3 .ct-series-a .ct-slice-donut {
+  stroke: rgb(189,79,25);
+}
 #chart3 .ct-series-b .ct-bar,
 #chart3 .ct-series-b .ct-line,
 #chart3 .ct-series-b .ct-point,
 #chart3 .ct-series-b .ct-slice-donut {
-  stroke: rgb(189,79,25);
+  stroke: rgb(122, 153, 172);
 }
 
+#chart5 .ct-series-a .ct-bar,
+#chart5 .ct-series-a .ct-line,
+#chart5 .ct-series-a .ct-point,
+#chart5 .ct-series-a .ct-slice-donut {
+  stroke: rgb(189,79,25);
+}
 #chart5 .ct-series-b .ct-bar,
 #chart5 .ct-series-b .ct-line,
 #chart5 .ct-series-b .ct-point,
 #chart5 .ct-series-b .ct-slice-donut {
-  stroke: rgb(189,79,25);
+  stroke: rgb(122, 153, 172);
 }

@@ -89,8 +89,8 @@
       case 'chart2':
         // Initialize a Pie chart in the container with the ID chart2
         window.chart['chart2'] = new Chartist.Pie('#chart2', {
-          series: [6, 14, 44, 33.50],
-          labels: ['6%', '14%', '44%', '33,5%']
+          series: [6, 14, 44, 33.50, 2.5],
+          labels: ['6%', '14%', '44%', '33,5%', '2,5%']
           }, {
             donut: true,
             donutWidth: 70,
